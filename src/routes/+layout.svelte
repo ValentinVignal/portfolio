@@ -6,6 +6,8 @@
 
 <nav class="layout">
 	<a href="/">My Site</a>
+	<a href="/resources">My Site</a>
+	<a href="/contact">My Site</a>
 </nav>
 <main class="layout">
 	<slot />
