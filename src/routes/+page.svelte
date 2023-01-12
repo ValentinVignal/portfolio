@@ -1,5 +1,5 @@
 <script>
-	import md from '$lib/assets/md.md?raw';
+	import md from '$lib/assets/markdown/md.md?raw';
 	import Bullets from '$lib/components/Bullets.svelte';
 	import RainbowText from '$lib/components/RainbowText.svelte';
 	import SubHeading from '$lib/components/SubHeading.svelte';
