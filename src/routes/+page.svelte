@@ -1,9 +1,21 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 	import type { PageData } from './$types';
+	import type { Pokemon } from './+page';
 	import { generations } from './generations';
 
 	export let data: PageData;
+
+	const pokemonId = $page.url.searchParams.get('pokemon-id') ?? '';
+
+	$: selectedPokemon = data.pokemons.find((pokemon) => pokemon.id === pokemonId);
+	const onPokemonClick = (pokemon: Pokemon) => {
+		goto(`/?pokemon-id=${pokemon.id}`);
+	};
 </script>
+
+{$page.url.searchParams.get('pokemon-id')}
 
 <div class="generations">
 	{#each generations as generation}
@@ -15,17 +27,21 @@
 
 <div class="pokemons">
 	{#each data.pokemons as pokemon (pokemon.id)}
-		<div class="pokemon">
+		<button class="pokemon" on:click={() => onPokemonClick(pokemon)}>
 			<div class="pokemon-content">
 				<img src={pokemon.image} alt={pokemon.name} />
 				{pokemon.name}
 			</div>
 			<div class="pokemon-id">{pokemon.id}</div>
-		</div>
+		</button>
 	{/each}
 </div>
 
 <style>
+	button {
+		border: none;
+	}
+
 	.generations {
 		display: flex;
 		flex-direction: row;
