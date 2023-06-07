@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import type { PageData } from './$types';
 	import { generations } from './generations';
@@ -16,8 +17,16 @@
 	$: pokemonId = $page.url.searchParams.get('pokemon-id') ?? '';
 	$: selectedPokemon = data.pokemons.find((pokemon) => pokemon.id === pokemonId);
 
+	$: generationId = $page.url.searchParams.get('generation-id') ?? '';
+
 	const submitSearch = (event: Event) => {
 		search = form.search;
+	};
+
+	const updateSearchParams = (key: string, value: string) => {
+		const searchParams = new URLSearchParams($page.url.searchParams);
+		searchParams.set(key, value);
+		goto(`?${searchParams.toString()}`);
 	};
 </script>
 
@@ -26,21 +35,36 @@
 {/if}
 
 <div class="generations">
-	{#each generations as generation}
-		<div class="generation">
+	<button
+		class="generation"
+		class:active={generationId === 'all'}
+		on:click={() => {
+			updateSearchParams('generation-id', 'all');
+		}}
+	>
+		All
+	</button>
+	{#each generations as generation (generation.id)}
+		<button
+			class="generation"
+			class:active={generation.id.toString() === generationId}
+			on:click={() => {
+				updateSearchParams('generation-id', generation.id.toString());
+			}}
+		>
 			{generation.mainRegion}
-		</div>
+		</button>
 	{/each}
 </div>
 
-<form class="search-form" on:submit={submitSearch}>
+<form class="search-form" on:submit|preventDefault={submitSearch}>
 	<input type="text" bind:value={form.search} placeholder="Pokemon Name" />
 	<input type="submit" value="Search" />
 </form>
 
 <div class="pokemons">
 	{#each selectedPokemons as pokemon (pokemon.id)}
-		<PokemonCard {pokemon} isInteractive={true} />
+		<PokemonCard {pokemon} {updateSearchParams} />
 	{/each}
 </div>
 
@@ -58,10 +82,20 @@
 		border: 1px solid black;
 		background-color: #f9f9f9;
 		color: #333;
+		cursor: pointer;
 	}
 
 	.generation:hover {
 		background-color: #eee;
+	}
+
+	.generation.active {
+		background-color: #333;
+		color: #fff;
+	}
+
+	.generation.active:hover {
+		background-color: #444;
 	}
 
 	.pokemons {

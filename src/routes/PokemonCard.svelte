@@ -1,16 +1,14 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
 	import type { Pokemon } from './+page';
 
 	export let pokemon: Pokemon;
-	export let isInteractive: boolean = false;
-
-	const onPokemonClick = (pokemon: Pokemon) => {
-		goto(`/?pokemon-id=${pokemon.id}`);
-	};
+	export let updateSearchParams: ((key: string, value: string) => void) | null = null;
 </script>
 
-<button class="pokemon" on:click={isInteractive ? () => onPokemonClick(pokemon) : null}>
+<button
+	class="pokemon"
+	on:click={updateSearchParams ? () => updateSearchParams?.('pokemon-id', pokemon.id) : null}
+>
 	<div class="pokemon-content">
 		<img src={pokemon.image} alt={pokemon.name} />
 		{pokemon.name}

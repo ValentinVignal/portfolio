@@ -12,10 +12,20 @@ export type Pokemon = ApiPokemon & {
 
 
 
-export const load = (async ({ fetch }) => {
-  const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
-  const json = await response.json()
-  const pokemons: Pokemon[] = json.results.map((pokemon: ApiPokemon) => {
+export const load = (async ({ fetch, url }) => {
+  const generationId = url.searchParams.get('generation-id') ?? '1';
+  let apiPokemons: ApiPokemon[];
+  if (generationId === 'all') {
+
+    const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=99999')
+    const json = await response.json()
+    apiPokemons = json.results;
+  } else {
+    const generationResponse = await fetch(`https://pokeapi.co/api/v2/generation/${generationId}`);
+    const generationJson = await generationResponse.json();
+    apiPokemons = generationJson.pokemon_species
+  }
+  const pokemons: Pokemon[] = apiPokemons.map((pokemon: ApiPokemon) => {
     const splitUrl = pokemon.url.split('/');
     return {
       ...pokemon,
