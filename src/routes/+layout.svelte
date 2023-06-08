@@ -1,10 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { caughtPokemons } from '$lib/stores';
 </script>
 
 <div class="navbar">
 	<a href="/" class:active={$page.url.pathname === '/'}>Home</a>
-	<a href="/my-pokemons" class:active={$page.url.pathname === '/my-pokemons'}>My pokemons</a>
+	<a href="/my-pokemons" class:active={$page.url.pathname === '/my-pokemons'}
+		>My pokemons ({$caughtPokemons.length})</a
+	>
 </div>
 
 <div class="container">

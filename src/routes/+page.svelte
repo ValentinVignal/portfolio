@@ -14,9 +14,6 @@
 		return pokemon.name.toLowerCase().includes(search.toLowerCase());
 	});
 
-	$: pokemonId = $page.url.searchParams.get('pokemon-id') ?? '';
-	$: selectedPokemon = data.pokemons.find((pokemon) => pokemon.id === pokemonId);
-
 	$: generationId = $page.url.searchParams.get('generation-id') ?? '';
 
 	const submitSearch = (event: Event) => {
@@ -29,10 +26,6 @@
 		goto(`?${searchParams.toString()}`);
 	};
 </script>
-
-{#if selectedPokemon}
-	<PokemonCard pokemon={selectedPokemon} />
-{/if}
 
 <div class="generations">
 	<button
@@ -64,7 +57,7 @@
 
 <div class="pokemons">
 	{#each selectedPokemons as pokemon (pokemon.id)}
-		<PokemonCard {pokemon} {updateSearchParams} />
+		<PokemonCard {pokemon} />
 	{/each}
 </div>
 

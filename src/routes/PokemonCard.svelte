@@ -1,14 +1,17 @@
 <script lang="ts">
+	import { caughtPokemons } from '$lib/stores';
 	import type { Pokemon } from './+page';
 
 	export let pokemon: Pokemon;
-	export let updateSearchParams: ((key: string, value: string) => void) | null = null;
+
+	const catchPokemon = () => {
+		caughtPokemons.update((pokemons) => {
+			return [...pokemons, pokemon];
+		});
+	};
 </script>
 
-<button
-	class="pokemon"
-	on:click={updateSearchParams ? () => updateSearchParams?.('pokemon-id', pokemon.id) : null}
->
+<button class="pokemon" on:click={catchPokemon}>
 	<div class="pokemon-content">
 		<img src={pokemon.image} alt={pokemon.name} />
 		{pokemon.name}
