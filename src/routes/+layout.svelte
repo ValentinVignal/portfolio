@@ -1,8 +1,10 @@
 <script lang="ts">
-	import NavBar from '$lib/NavBar.svelte';
+	import Drawer from '$lib/components/Drawer.svelte';
+	import NavBar from '$lib/components/NavBar.svelte';
 	import '../app.css';
 </script>
 
-<NavBar>
+<Drawer>
+	<NavBar />
 	<slot />
-</NavBar>
+</Drawer>

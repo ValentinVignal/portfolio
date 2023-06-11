@@ -4,14 +4,12 @@
 </script>
 
 <div class="drawer md:drawer-open">
-	<input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-	<div class="drawer-content flex flex-col items-center justify-center">
-		<label for="my-drawer-2" class="btn btn-primary drawer-button md:hidden">Open drawer</label>
-
+	<input id="drawer" type="checkbox" class="drawer-toggle" />
+	<div class="drawer-content flex flex-col items-center justify-start">
 		<slot />
 	</div>
 	<div class="drawer-side">
-		<label for="my-drawer-2" class="drawer-overlay" />
+		<label for="drawer" class="drawer-overlay" />
 
 		<ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
 			<li><a class="link" href="{base}/">Home</a></li>
