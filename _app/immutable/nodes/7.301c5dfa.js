@@ -1,1 +1,0 @@
-import{S as o,i as r,s as i,q as c,r as p,b as l,D as a,h as m}from"../chunks/index.fa44deaf.js";function x(n){let e;return{c(){e=c("Work experience.")},l(t){e=p(t,"Work experience.")},m(t,s){l(t,e,s)},p:a,i:a,o:a,d(t){t&&m(e)}}}class f extends o{constructor(e){super(),r(this,e,null,x,i,{})}}export{f as component};
