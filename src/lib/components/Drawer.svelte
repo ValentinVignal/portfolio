@@ -18,6 +18,7 @@
 			<li><a class="link" href="{base}/projects">Projects</a></li>
 			<li><a class="link" href="{base}/contributions">Contributions</a></li>
 			<li><a class="link" href="{base}/skills">Skills</a></li>
+			<li><a class="link" href="{base}/accounts">Accounts</a></li>
 			<div class="divider" />
 			<ThemeSwitcher />
 		</ul>

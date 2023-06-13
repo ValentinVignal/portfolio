@@ -6,5 +6,13 @@
 
 <Drawer>
 	<NavBar />
-	<slot />
+	<div class="container">
+		<slot />
+	</div>
 </Drawer>
+
+<style>
+	.container {
+		padding: 16px;
+	}
+</style>
