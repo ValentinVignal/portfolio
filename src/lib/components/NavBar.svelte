@@ -1,5 +1,27 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { page } from '$app/stores';
+
+	const getTitle = (base: string): string => {
+		switch (base) {
+			case '/education':
+				return 'Education';
+			case '/work-experience':
+				return 'Work experience';
+			case '/projects':
+				return 'Projects';
+			case '/contributions':
+				return 'Contributions';
+			case '/skills':
+				return 'Skills';
+			case '/accounts':
+				return 'Accounts';
+			default:
+				return '';
+		}
+	};
+
+	$: title = getTitle($page.url.pathname);
 </script>
 
 <div class="navbar bg-base-100">
@@ -20,4 +42,7 @@
 		</label>
 	</div>
 	<a class="btn btn-ghost normal-case text-xl" href="{base}/">Valentin Vignal</a>
+	{#if title}
+		<p class="text-lg">{title}</p>
+	{/if}
 </div>
