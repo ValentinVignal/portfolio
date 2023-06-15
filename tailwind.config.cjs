@@ -2,7 +2,12 @@
 export default {
   content: ["./src/**/*.{html,js,svelte}"],
   theme: {
-    extend: {},
+    extend: {}
+  },
+  daisyui: {
+    themes: [
+      'light', 'dark', 'halloween', 'forest', 'dracula', 'night',
+    ],
   },
   plugins: [
     require('@tailwindcss/typography'),
