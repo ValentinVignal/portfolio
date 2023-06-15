@@ -2,18 +2,18 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
+		<link rel="icon" href="../favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link href="./_app/immutable/assets/0.e2fa1b60.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.cfc89f3a.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.b16ede70.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c1ded650.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.bd73d7b9.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.93bb6f4a.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.89a69018.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.89ff9739.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.1b10ebe0.js">
+		<link href="../_app/immutable/assets/0.e2fa1b60.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.cfc89f3a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.b16ede70.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c1ded650.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.bd73d7b9.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.93bb6f4a.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.89a69018.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.89ff9739.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/9.19824d85.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -23,7 +23,7 @@
 	<div class="drawer-content flex flex-col items-center justify-start"><div class="navbar bg-base-100"><div class="flex-none"><label for="drawer" class="btn btn-ghost drawer-button md:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></label></div>
 	<a class="btn btn-ghost normal-case text-xl" href="/portfolio/">Valentin Vignal</a>
 	</div>
-	<div class="container svelte-we7rjr">Hello! I&#39;m Valentin Vignal</div></div>
+	<div class="container svelte-we7rjr">Novade.</div></div>
 	<div class="drawer-side"><label for="drawer" class="drawer-overlay"></label>
 
 		<ul class="menu p-4 w-80 h-full bg-base-200 text-base-content"><li><a href="/portfolio/">Home</a></li>
@@ -42,7 +42,7 @@
 				{
 					__sveltekit_vl8ugt = {
 						assets: "/portfolio",
-						base: new URL(".", location).pathname.slice(0, -1),
+						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
 
@@ -51,11 +51,11 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.cfc89f3a.js"),
-						import("./_app/immutable/entry/app.93bb6f4a.js")
+						import("../_app/immutable/entry/start.cfc89f3a.js"),
+						import("../_app/immutable/entry/app.93bb6f4a.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 2],
+							node_ids: [0, 9],
 							data,
 							form: null,
 							error: null
