@@ -2,19 +2,23 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 
-	const getTitle = (base: string): string => {
-		switch (base) {
-			case '/education':
+	// TODO: Fix
+	const getTitle = (path: string): string => {
+		if (base) {
+			path = path.replace(base, '');
+		}
+		switch (path) {
+			case `/education`:
 				return 'Education';
-			case '/work-experience':
+			case `/work-experience`:
 				return 'Work experience';
-			case '/projects':
+			case `/projects`:
 				return 'Projects';
-			case '/contributions':
+			case `/contributions`:
 				return 'Contributions';
-			case '/skills':
+			case `/skills`:
 				return 'Skills';
-			case '/accounts':
+			case `/accounts`:
 				return 'Accounts';
 			default:
 				return '';
