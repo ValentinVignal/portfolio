@@ -12,7 +12,12 @@
 		<label for="drawer" class="drawer-overlay" />
 
 		<ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
-			<li><a class="link" href="{base}/">Home</a></li>
+			<li>
+				<label for="drawer" class="btn btn-ghost drawer-button md:hidden">
+					<a class="link" href="{base}/">Home</a></label
+				>
+			</li>
+
 			<li><a class="link" href="{base}/education">Education</a></li>
 			<li><a class="link" href="{base}/work-experience">Work experience</a></li>
 			<li><a class="link" href="{base}/projects">Projects</a></li>

@@ -241,6 +241,11 @@
   resolved "https://registry.npmjs.org/@polka/url/-/url-1.0.0-next.21.tgz"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
+"@steeze-ui/heroicons@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@steeze-ui/heroicons/-/heroicons-2.2.2.tgz#f0f93898c1d3fee0fe5f9a45be6903e3ba3d2f7c"
+  integrity sha512-VUkgSAbjLzsEuF4kDQDESANb/NNxqhkOMnrzD1VhB3tSGr7wVZ5FKS7aM2QZcKXjziwR6dbt7Nhs3fpZhqOi1A==
+
 "@sveltejs/adapter-auto@^2.0.0":
   version "2.1.0"
   resolved "https://registry.npmjs.org/@sveltejs/adapter-auto/-/adapter-auto-2.1.0.tgz"
@@ -1967,6 +1972,13 @@ svelte-eslint-parser@^0.29.0:
     eslint-scope "^7.0.0"
     eslint-visitor-keys "^3.0.0"
     espree "^9.0.0"
+
+svelte-hero-icons@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/svelte-hero-icons/-/svelte-hero-icons-5.0.0.tgz#a3c46156af7c68c70be2350ecfe866b3de4122e0"
+  integrity sha512-xKMI/Z0f/6831I0R1YKJjVbAw9VBD6XKysvng6LtomlS4n3ZD1lZNAfLrrCmnc1pmiLr/8sVeQA8kgHLQwYlRg==
+  dependencies:
+    "@steeze-ui/heroicons" "^2.2.2"
 
 svelte-hmr@^0.15.1:
   version "0.15.2"

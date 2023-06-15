@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { ArrowTopRightOnSquare, Icon } from 'svelte-hero-icons';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -12,6 +13,7 @@
 					<div class="card-body">
 						<div class="card-title">
 							{education.name}
+							<Icon src={ArrowTopRightOnSquare} size="25" />
 						</div>
 						<p>
 							<small>
@@ -47,5 +49,11 @@
 		margin: 8px;
 		width: 100%;
 		text-align: left;
+	}
+	.card-title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
 	}
 </style>
