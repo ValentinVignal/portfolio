@@ -28,6 +28,10 @@ const accounts: Account[] = [
     name: 'Reddit',
     url: 'https://www.reddit.com/user/ValentinVignalDev',
   },
+  {
+    name: 'Google Play',
+    url: 'https://play.google.com/store/apps/developer?id=Valentin+Vignal',
+  },
 ];
 
 export const load = () => ({ accounts });
