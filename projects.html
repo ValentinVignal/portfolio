@@ -5,16 +5,16 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link href="./_app/immutable/assets/0.a02d93bc.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/6.686ce142.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.594b6bc7.js">
+		<link href="./_app/immutable/assets/0.73b80775.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/6.b5bcddc3.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.aaef25bc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.b16ede70.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.bd74e207.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.dfca1521.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.e5ef3c57.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.f26c71e7.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.62d51ce1.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/6.f16cdd15.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.4547d824.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.1d608b5d.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.507385c3.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.6ac1434b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.e20c8b7d.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/6.1eaee9c1.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -25,11 +25,43 @@
 	<a class="btn btn-ghost normal-case text-xl" href="/portfolio/">Valentin Vignal</a>
 	<p class="text-lg">Projects</p></div>
 	<div class="container svelte-we7rjr"><div class="container svelte-12kn6gc"><div class="collapse bg-base-200"><input type="checkbox">
-	<div class="collapse-title text-xl font-medium">Ntm</div>
-	<div class="collapse-content"><p>A programming language built on top of dart.</p>
+	<div class="collapse-title text-xl font-medium">Ntm
+		<article class="prose svelte-7c53cu"><p class="svelte-7c53cu">A programming language built on top of dart inspired from <a href="https://www.craftinginterpreters.com/index.html" class="svelte-7c53cu">Crafting interpreter</a>.
+			</p></article></div>
+	<div class="collapse-content"><div class="divider"></div>
+		<article class="prose svelte-7c53cu"><p>Ntm is composed of scanner and a parser which create an AST. The interpreter interprets the
+				AST.
+			</p>
+			<p>It comes with a command line tool to interpret ntm code from a file or an interactive
+				console.
+			</p>
 
-		<div class="actions svelte-1fy32kw"><a href="https://github.com/Novade/ntm" target="_blank" rel="noopener noreferrer"><button class="btn btn-neutral">GitHub</button></a>
-			<a href="https://ntm-pad.web.app" target="_blank" rel="noopener noreferrer"><button class="btn btn-neutral">Demo</button></a></div></div>
+			<div class="actions svelte-7c53cu"><a href="https://github.com/Novade/ntm" target="_blank" rel="noopener noreferrer" class="svelte-7c53cu"><button class="btn btn-neutral">GitHub</button></a>
+				<a href="https://ntm-pad.web.app" target="_blank" rel="noopener noreferrer" class="svelte-7c53cu"><button class="btn btn-neutral">Demo</button></a></div>
+
+			<h2>ntm_pad</h2>
+
+			<p>It is a web app that allows you to write and run ntm code in your browser. Try out</p></article>
+
+		<div class="mockup-code"><pre data-prefix="1"><code>fun add(a, b) {</code></pre>
+			<pre data-prefix="2"><code>  return a + b;</code></pre>
+			<pre data-prefix="3"><code>}</code></pre>
+			<pre data-prefix="4"><code>var a = 1;</code></pre>
+			<pre data-prefix="5"><code>var c = add(a, 2);</code></pre>
+			<pre data-prefix="6"><code>print c;</code></pre></div>
+		<article class="prose svelte-7c53cu"><div class="actions svelte-7c53cu"><a href="https://github.com/Novade/ntm_flutter" target="_blank" rel="noopener noreferrer" class="svelte-7c53cu"><button class="btn btn-neutral">GitHub</button></a>
+				<a href="https://ntm-pad.web.app" target="_blank" rel="noopener noreferrer" class="svelte-7c53cu"><button class="btn btn-neutral">Demo</button></a></div>
+
+			<h2>ntm-vscode</h2>
+
+			<p>A VSCode extension that allows you to highlight ntm code.</p>
+
+			<div class="actions svelte-7c53cu"><a href="https://github.com/Novade/ntm-vscode" target="_blank" rel="noopener noreferrer" class="svelte-7c53cu"><button class="btn btn-neutral">GitHub</button></a>
+				<a href="https://marketplace.visualstudio.com/items?itemName=valentin-vignal.ntm" target="_blank" rel="noopener noreferrer" class="svelte-7c53cu"><button class="btn btn-neutral">Extension</button></a></div>
+
+			<h2>Libraries</h2>
+
+			<ul><li><a href="https://pub.dev/packages/melos">Melos</a></li></ul></article></div>
 </div>
 	<div class="collapse bg-base-200"><input type="checkbox">
 	<div class="collapse-title text-xl font-medium">Hider</div>
@@ -68,7 +100,7 @@
 			
 			<script>
 				{
-					__sveltekit_5y82nl = {
+					__sveltekit_gfexg1 = {
 						assets: "/portfolio",
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
@@ -79,8 +111,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.594b6bc7.js"),
-						import("./_app/immutable/entry/app.e5ef3c57.js")
+						import("./_app/immutable/entry/start.aaef25bc.js"),
+						import("./_app/immutable/entry/app.507385c3.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 6],
