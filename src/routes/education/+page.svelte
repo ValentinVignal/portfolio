@@ -8,7 +8,7 @@
 <ul class="steps steps-vertical">
 	{#each data.education as education (education.url)}
 		<li data-content="" class="step step-primary">
-			<a href={education.url} target="_blank" rel="noopener noreferrer">
+			<a href={education.url}>
 				<div class="card shadow-xl bg-base-100 max-w-96 card-bordered">
 					<div class="card-body">
 						<div class="card-title">
