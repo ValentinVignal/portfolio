@@ -1,4 +1,4 @@
-<div class="collapse bg-base-200">
+<div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
 		Themed color palette
