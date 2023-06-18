@@ -1,0 +1,44 @@
+<div class="collapse bg-base-200">
+	<input type="checkbox" />
+	<div class="collapse-title text-xl font-medium">
+		Action dart analyze
+		<article class="prose">
+			<p>
+				A GitHub action written in TypeScript that analyzes dart code by running <code
+					>dart analyze</code
+				>
+				and
+				<code>dart format</code>.
+			</p>
+		</article>
+	</div>
+	<div class="collapse-content">
+		<article class="prose">
+			<div class="actions">
+				<a
+					href="https://github.com/ValentinVignal/action-dart-analyze"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<button class="btn btn-neutral">GitHub</button>
+				</a>
+				<a
+					href="https://github.com/marketplace/actions/dart-analyze"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<button class="btn btn-neutral">Marketplace</button>
+				</a>
+			</div>
+		</article>
+	</div>
+</div>
+
+<style>
+	.actions {
+		padding: 8px 0px;
+	}
+	article > * > a {
+		text-decoration: underline;
+	}
+</style>

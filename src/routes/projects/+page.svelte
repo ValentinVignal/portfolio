@@ -1,8 +1,12 @@
 <script>
+	import ActionDartAnalyze from './ActionDartAnalyze.svelte';
+	import ChromeMarkdownEmojis from './ChromeMarkdownEmojis.svelte';
 	import Hider from './Hider.svelte';
+	import MidiGenerator from './MidiGenerator.svelte';
 	import Ntm from './Ntm.svelte';
 	import Periodik from './Periodik.svelte';
 	import Portfolio from './Portfolio.svelte';
+	import ThemedColorPalette from './ThemedColorPalette.svelte';
 </script>
 
 <div class="container">
@@ -10,6 +14,10 @@
 	<Hider />
 	<Periodik />
 	<Portfolio />
+	<ActionDartAnalyze />
+	<ThemedColorPalette />
+	<ChromeMarkdownEmojis />
+	<MidiGenerator />
 </div>
 
 <style>
