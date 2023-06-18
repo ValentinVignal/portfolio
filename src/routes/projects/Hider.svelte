@@ -3,7 +3,7 @@
 	<div class="collapse-title text-xl font-medium">
 		Hider
 		<article class="prose">
-			<p>A flutter application using firebase to store encrypted notes.</p>
+			<p>A Flutter application using firebase to store encrypted notes.</p>
 		</article>
 	</div>
 	<div class="collapse-content">

@@ -3,7 +3,7 @@
 	<div class="collapse-title text-xl font-medium">
 		Periodik
 		<article class="prose">
-			<p>A flutter application to find the periodicity of some events based on the instances.</p>
+			<p>A Flutter application to find the periodicity of some events based on the instances.</p>
 		</article>
 	</div>
 	<div class="collapse-content">
