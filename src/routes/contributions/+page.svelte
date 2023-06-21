@@ -4,6 +4,7 @@
 	import Flutter from './Flutter.svelte';
 	import FlutterPackages from './FlutterPackages.svelte';
 	import GoRouter from './GoRouter.svelte';
+	import NestJsQuery from './NestJSQuery.svelte';
 	import Riverpod from './Riverpod.svelte';
 </script>
 
@@ -14,6 +15,7 @@
 	<Riverpod />
 	<Ferry />
 	<Drift />
+	<NestJsQuery />
 </div>
 
 <style>

@@ -1,3 +1,4 @@
+<!-- TODO: Mention youtube video Remi mentioning me -->
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
