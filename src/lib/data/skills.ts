@@ -13,7 +13,8 @@ export const skills: Skill[] = [
   { id: 'go-router', name: 'Go Router' },
   { id: 'drift', name: 'Drift' },
   { id: 'ferry', name: 'Ferry' },
-  { id: 'nestjs', name: 'NestJS' },
+  { id: 'nestjs-query', name: 'NestJS' },
+  { id: 'nestjs', name: 'Nestjs-query' },
   { id: 'provider', name: 'Provider' },
   { id: 'svelte', name: 'Svelte' },
   { id: 'built-value', name: 'Built value' },
@@ -22,4 +23,7 @@ export const skills: Skill[] = [
   { id: 'sqlite', name: 'SQLite' },
   { id: 'python', name: 'Python' },
   { id: 'javascript', name: 'Javascript' },
+  { id: 'firebase', name: 'Firebase' },
+  { id: 'github-actions', name: 'Github actions' },
+  { id: 'vscode', name: 'VSCode' },
 ];
