@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ProfilePicture from '$lib/assets/images/profile-picture.jpg';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import DrawerItem from './DrawerItem.svelte';
 </script>
@@ -12,6 +13,7 @@
 		<label for="drawer" class="drawer-overlay" />
 
 		<ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+			<img src={ProfilePicture} alt="Profile" />
 			<li>
 				<DrawerItem href="/" text="Home" />
 			</li>
@@ -38,3 +40,13 @@
 		</ul>
 	</div>
 </div>
+
+<style>
+	img {
+		width: 200px;
+		height: 200px;
+		align-self: center;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+</style>
