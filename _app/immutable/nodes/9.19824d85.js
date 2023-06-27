@@ -1,1 +1,0 @@
-import{S as n,i as r,s as i,q as c,r as l,b as m,D as a,h as p}from"../chunks/index.b16ede70.js";function d(s){let t;return{c(){t=c("Novade.")},l(e){t=l(e,"Novade.")},m(e,o){m(e,t,o)},p:a,i:a,o:a,d(e){e&&p(t)}}}class f extends n{constructor(t){super(),r(this,t,null,d,i,{})}}export{f as component};
