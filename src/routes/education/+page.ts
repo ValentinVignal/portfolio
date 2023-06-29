@@ -11,12 +11,14 @@ const education: Education[] = [
   {
     name: 'National University of Singapore - School of Computing',
     url: 'https://nus.edu.sg/',
+    description: 'Master in Computer Science - Specialization in Artificial Intelligence',
     start: new Date(2019, 0),
     end: new Date(2020, 5),
   },
   {
     name: 'CentralSupélec',
     url: 'https://www.centralesupelec.fr/en',
+    description: 'Master in Engineering - Specialization in Computer Science and Electrical Engineering',
     start: new Date(2016, 8),
     end: new Date(2020, 5),
   },
