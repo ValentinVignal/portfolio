@@ -12,6 +12,8 @@
 				return 'Education';
 			case `/work-experience`:
 				return 'Work experience';
+			case `/work-experience/novade-solutions`:
+				return 'Novade Solutions';
 			case `/projects`:
 				return 'Projects';
 			case `/contributions`:
