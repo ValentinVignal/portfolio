@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <article class="prose">
 	<p>Hello! I'm Valentin Vignal.</p>
 
