@@ -43,10 +43,11 @@
 
 <style>
 	img {
-		width: 200px;
-		height: 200px;
+		max-height: 200px;
+		aspect-ratio: 1;
+		height: 25%;
 		align-self: center;
-		border-radius: 50%;
+		border-radius: 80%;
 		object-fit: cover;
 	}
 </style>
