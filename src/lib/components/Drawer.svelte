@@ -12,7 +12,7 @@
 	<div class="drawer-side z-10">
 		<label for="drawer" class="drawer-overlay" />
 
-		<div class="drawer-content bg-base-200">
+		<div class="drawer-side-content bg-base-200">
 			<img src={ProfilePicture} alt="Profile" />
 			<ul class="menu w-80 text-base-content bg-base-200">
 				<li>
@@ -59,7 +59,7 @@
 		margin-top: 16px;
 	}
 
-	.drawer-content {
+	.drawer-side-content {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
