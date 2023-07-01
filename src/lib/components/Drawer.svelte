@@ -13,7 +13,9 @@
 		<label for="drawer" class="drawer-overlay" />
 
 		<div class="drawer-side-content bg-base-200">
-			<img src={ProfilePicture} alt="Profile" />
+			<a href="/" class="profile-picture">
+				<img src={ProfilePicture} alt="Profile" />
+			</a>
 			<ul class="menu w-80 text-base-content bg-base-200">
 				<li>
 					<DrawerItem href="/" text="Home" />
@@ -49,14 +51,19 @@
 
 <style>
 	img {
-		max-height: 200px;
+		align-self: center;
+		border-radius: 50%;
 		aspect-ratio: 1;
+		height: 100%;
+		object-fit: cover;
+	}
+	.profile-picture {
+		max-height: 200px;
 		height: 25%;
 		min-height: 100px;
-		align-self: center;
-		border-radius: 80%;
-		object-fit: cover;
 		margin-top: 16px;
+		justify-content: center;
+		display: flex;
 	}
 
 	.drawer-side-content {
