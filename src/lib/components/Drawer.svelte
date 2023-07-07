@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import ProfilePicture from '$lib/assets/images/profile-picture.jpg';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import DrawerItem from './DrawerItem.svelte';
@@ -13,7 +14,7 @@
 		<label for="drawer" class="drawer-overlay" />
 
 		<div class="drawer-side-content bg-base-200">
-			<a href="/" class="profile-picture">
+			<a href="{base}/" class="profile-picture">
 				<img src={ProfilePicture} alt="Profile" />
 			</a>
 			<ul class="menu w-80 text-base-content bg-base-200">
