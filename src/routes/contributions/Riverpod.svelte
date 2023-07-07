@@ -12,6 +12,11 @@
 	</div>
 	<div class="collapse-content">
 		<article class="prose">
+			<p>
+				Rémi Rousselet, the creator of<code>riverpod</code>,
+				<a href="https://www.youtube.com/watch?v=CzHt_uwmlXM&t=66s">mentioned me in his talk</a>
+				at <a href="https://fluttervikings.com/">Flutter Vikings</a> 2022.
+			</p>
 			<ul>
 				<li>
 					<a href="https://github.com/rrousselGit/riverpod/tree/master/packages/riverpod_graph"
