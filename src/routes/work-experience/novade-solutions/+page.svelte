@@ -7,10 +7,15 @@
 	</p>
 
 	<p>
-		The project I worked on is a mobile and web application that allows construction and real estate
-		companies to manage their work. The front end (web and mobile) are developed using <a
-			href="https://flutter.dev/">Flutter</a
-		>. The backend runs using <a href="https://www.typescriptlang.org/">TypeScript</a> and
+		The project I worked on is a mobile (<a
+			href="https://play.google.com/store/apps/details?id=net.novade.lite">Android</a
+		>
+		and <a href="https://apps.apple.com/sg/app/novade-lite-field-management/id1579805253">iOS</a>)
+		and <a href="https://lite.novade.net/">web</a> application that allows construction and real
+		estate companies to manage their work. The front end (web and mobile) are developed using
+		<a href="https://flutter.dev/">Flutter</a>. The backend runs using
+		<a href="https://www.typescriptlang.org/">TypeScript</a>
+		and
 		<a href="https://nodejs.org/en">node.js</a>
 		using <a href="https://nestjs.com/">Nestjs</a> and <a href="https://typeorm.io/">TypeORM</a> to
 		connect to a <a href="https://www.postgresql.org/">PostgreSQL</a> database. The API mostly uses
