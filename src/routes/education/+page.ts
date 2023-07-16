@@ -5,6 +5,7 @@ type Education = {
   start: Date;
   end: Date;
   description?: string;
+  logo?: string;
 }
 
 const education: Education[] = [
@@ -14,6 +15,7 @@ const education: Education[] = [
     description: 'Master in Computer Science - Specialization in Artificial Intelligence',
     start: new Date(2019, 0),
     end: new Date(2020, 5),
+    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/NUS_coat_of_arms.svg/800px-NUS_coat_of_arms.svg.png'
   },
   {
     name: 'CentralSupélec',
@@ -21,6 +23,7 @@ const education: Education[] = [
     description: 'Master in Engineering - Specialization in Computer Science and Electrical Engineering',
     start: new Date(2016, 8),
     end: new Date(2020, 5),
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/LogoCS.png/1280px-LogoCS.png'
   },
   {
     name: 'Lycée Masséna - MPSI/MP*',

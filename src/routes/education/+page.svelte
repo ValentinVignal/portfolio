@@ -12,8 +12,15 @@
 				<div class="card shadow-xl bg-base-100 max-w-96 card-bordered">
 					<div class="card-body">
 						<div class="card-title">
-							{education.name}
-							<Icon src={ArrowTopRightOnSquare} size="25" />
+							<div class="card-name">
+								{#if education.logo}
+									<img src={education.logo} alt={education.name} class="h-12" />
+								{/if}
+								{education.name}
+							</div>
+							<div class="arrow-icon">
+								<Icon src={ArrowTopRightOnSquare} size="25" />
+							</div>
 						</div>
 						<p>
 							<small>
@@ -55,5 +62,19 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	.card-name {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	img {
+		padding-right: 8px;
+	}
+
+	.arrow-icon {
+		size: 25px;
 	}
 </style>
