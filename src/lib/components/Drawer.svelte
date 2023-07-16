@@ -2,6 +2,15 @@
 	import { base } from '$app/paths';
 	import ProfilePicture from '$lib/assets/images/profile-picture.jpg';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
+	import {
+		BuildingLibrary,
+		BuildingOffice,
+		CodeBracket,
+		CommandLine,
+		Hashtag,
+		Home,
+		User
+	} from 'svelte-hero-icons';
 	import DrawerItem from './DrawerItem.svelte';
 </script>
 
@@ -19,25 +28,25 @@
 			</a>
 			<ul class="menu w-80 text-base-content bg-base-200">
 				<li>
-					<DrawerItem href="/" text="Home" />
+					<DrawerItem href="/" text="Home" icon={Home} />
 				</li>
 				<li>
-					<DrawerItem href="/education" text="Education" />
+					<DrawerItem href="/education" text="Education" icon={BuildingLibrary} />
 				</li>
 				<li>
-					<DrawerItem href="/work-experience" text="Work experience" />
+					<DrawerItem href="/work-experience" text="Work experience" icon={BuildingOffice} />
 				</li>
 				<li>
-					<DrawerItem href="/projects" text="Projects" />
+					<DrawerItem href="/projects" text="Projects" icon={CommandLine} />
 				</li>
 				<li>
-					<DrawerItem href="/contributions" text="Contributions" />
+					<DrawerItem href="/contributions" text="Contributions" icon={CodeBracket} />
 				</li>
 				<li>
-					<DrawerItem href="/skills" text="Skills" />
+					<DrawerItem href="/skills" text="Skills" icon={Hashtag} />
 				</li>
 				<li>
-					<DrawerItem href="/accounts" text="Accounts" />
+					<DrawerItem href="/accounts" text="Accounts" icon={User} />
 				</li>
 			</ul>
 			<div class="bg-base-200">
@@ -79,7 +88,9 @@
 
 	.theme-switcher {
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
+		align-items: center;
 		padding-left: 8px;
 		padding-right: 8px;
 		padding-bottom: 16px;
