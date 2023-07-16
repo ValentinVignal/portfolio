@@ -1,7 +1,10 @@
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Hider
+		<div class="title">
+			<img src="https://hider-c122b.web.app/favicon.png" alt="Hider" class="h-8" />
+			Hider
+		</div>
 		<article class="prose">
 			<p>A Flutter application using firebase to store encrypted notes.</p>
 		</article>
@@ -42,5 +45,16 @@
 	}
 	article > * > a {
 		text-decoration: underline;
+	}
+
+	.title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	img {
+		size: 25px;
+		margin-right: 8px;
 	}
 </style>

@@ -1,7 +1,14 @@
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Portfolio
+		<div class="title">
+			<img
+				src="https://valentinvignal.github.io/portfolio/favicon.png"
+				alt="Portfolio"
+				class="h-8 rounded"
+			/>
+			Portfolio
+		</div>
 		<article class="prose">
 			<p>My portfolio website made with SvelteKit.</p>
 		</article>
@@ -41,5 +48,14 @@
 
 	article > * > a {
 		text-decoration: underline;
+	}
+	.title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	img {
+		margin-right: 8px;
 	}
 </style>

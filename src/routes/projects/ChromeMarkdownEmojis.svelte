@@ -1,7 +1,14 @@
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Chrome markdown emojis
+		<div class="title">
+			<img
+				src="https://lh3.googleusercontent.com/dSxbcdV0X7hw6eBVbEHZLDmJR-pTIRpjk86copdyXCdiqDa5AmoTOMTMwNIO4ULbfSw_OVrmA0HFckh4gtttHMBIdw=w128-h128-e365-rj-sc0x00ffffff"
+				alt="Chrome markdown emojis"
+				class="h-8 rounded-full"
+			/>
+			Chrome markdown emojis
+		</div>
 		<article class="prose">
 			<p>A TypeScript Google Chrome extension to insert emojis from their markdown code.</p>
 		</article>
@@ -34,5 +41,15 @@
 	}
 	article > * > a {
 		text-decoration: underline;
+	}
+	.title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	img {
+		size: 25px;
+		margin-right: 8px;
 	}
 </style>
