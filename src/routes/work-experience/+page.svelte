@@ -13,19 +13,25 @@
 				<div class="card shadow-xl bg-base-100 max-w-96 card-bordered">
 					<div class="card-body">
 						<div class="card-title">
-							<div>
-								<a
-									href={workExperience.company.url}
-									class="company-url"
-									target="_blank"
-									rel="noopener noreferrer"
-									>{workExperience.company.name}
-								</a>
-								-
-								{workExperience.title}
+							<div class="card-name">
+								<img src={workExperience.company.logo} alt="logo" class="h-12 rounded" />
+								<div>
+									<a
+										href={workExperience.company.url}
+										class="company-url"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										{workExperience.company.name}
+									</a>
+									-
+									{workExperience.title}
+								</div>
 							</div>
 							{#if workExperience.url}
-								<Icon src={ChevronRight} size="25" />
+								<div class="arrow-icon">
+									<Icon src={ChevronRight} size="25" />
+								</div>
 							{/if}
 						</div>
 						<p>
@@ -75,5 +81,19 @@
 
 	.company-url {
 		text-decoration: underline;
+	}
+
+	.arrow-icon {
+		size: 25px;
+	}
+
+	.card-name {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	img {
+		margin-right: 8px;
 	}
 </style>

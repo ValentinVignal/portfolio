@@ -14,7 +14,7 @@
 						<div class="card-title">
 							<div class="card-name">
 								{#if education.logo}
-									<img src={education.logo} alt={education.name} class="h-12" />
+									<img src={education.logo} alt={education.name} class="h-12 rounded" />
 								{/if}
 								{education.name}
 							</div>
@@ -71,7 +71,7 @@
 	}
 
 	img {
-		padding-right: 8px;
+		margin-right: 8px;
 	}
 
 	.arrow-icon {
