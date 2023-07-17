@@ -1,7 +1,15 @@
+<script>
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Flutter
+		<LogoTitle
+			src="https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png"
+			title="Flutter"
+		/>
+
 		<article class="prose">
 			<p>I made multiple contributions to the flutter framework, mostly around the theme.</p>
 		</article>

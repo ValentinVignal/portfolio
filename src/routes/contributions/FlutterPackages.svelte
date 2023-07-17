@@ -1,7 +1,14 @@
+<script>
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Flutter packages
+		<LogoTitle
+			src="https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png"
+			title="Flutter packages"
+		/>
 		<article class="prose">
 			<p>
 				I made multiple contributions to the flutter packages, mostly around <code>go_router</code>

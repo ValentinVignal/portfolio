@@ -1,10 +1,11 @@
+<script>
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		<div class="title">
-			<img src="https://period-ik.web.app//favicon.png" alt="Periodik" class="h-8" />
-			Periodik
-		</div>
+		<LogoTitle src="https://period-ik.web.app//favicon.png" title="Periodik" />
 		<article class="prose">
 			<p>A Flutter application to find the periodicity of some events based on the instances.</p>
 		</article>
@@ -49,15 +50,6 @@
 		padding: 8px 0px;
 	}
 
-	.title {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-
-	img {
-		margin-right: 8px;
-	}
 	iframe {
 		padding-top: 16px;
 	}
