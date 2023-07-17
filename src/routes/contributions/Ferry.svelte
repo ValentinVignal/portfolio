@@ -1,7 +1,13 @@
+<script>
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		<code>ferry</code>
+		<LogoTitle src="https://ferrygraphql.com/img/favicon.ico" title="Ferry">
+			<code>ferry</code>
+		</LogoTitle>
 		<article class="prose">
 			<p>
 				I made multiple contributions to <code>ferry</code>, one of them to allow different request

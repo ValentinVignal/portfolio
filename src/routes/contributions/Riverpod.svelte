@@ -1,8 +1,14 @@
+<script>
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
+</script>
+
 <!-- TODO: Mention youtube video Remi mentioning me -->
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		<code>riverpod</code>
+		<LogoTitle title="Riverpod" src="https://riverpod.dev/img/logo.svg">
+			<code>riverpod</code>
+		</LogoTitle>
 		<article class="prose">
 			<p>
 				I made multiple contributions to <code>riverpod</code>, mostly around

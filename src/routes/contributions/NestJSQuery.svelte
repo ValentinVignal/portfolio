@@ -1,7 +1,11 @@
+<script>
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Nestjs-query
+		<LogoTitle src="https://tripss.github.io/nestjs-query/img/favicon.ico" title="Nestjs-query" />
 		<article class="prose">
 			<p>
 				I made multiple contributions to <code>nestjs-query</code> mostly around the graphql API.

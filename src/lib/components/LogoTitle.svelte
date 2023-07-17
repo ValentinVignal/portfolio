@@ -7,7 +7,11 @@
 
 <div>
 	<img {src} alt={alt ?? title} class="h-8" class:rounded={!round} class:rounded-full={round} />
-	{title}
+	{#if $$slots.default}
+		<slot />
+	{:else}
+		{title}
+	{/if}
 </div>
 
 <style>
