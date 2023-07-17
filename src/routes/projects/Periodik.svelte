@@ -31,6 +31,8 @@
 				</a>
 			</div>
 
+			<iframe src="https://period-ik.web.app/" title="periodik" height="400" />
+
 			<h2>Libraries</h2>
 			<ul>
 				<li><a href="https://pub.dev/packages/cloud_firestore">cloud_firestore</a></li>
@@ -55,5 +57,8 @@
 
 	img {
 		margin-right: 8px;
+	}
+	iframe {
+		padding-top: 16px;
 	}
 </style>

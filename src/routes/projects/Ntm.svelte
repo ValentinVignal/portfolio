@@ -28,9 +28,6 @@
 				<a href="https://github.com/Novade/ntm" target="_blank" rel="noopener noreferrer">
 					<button class="btn btn-neutral">GitHub</button>
 				</a>
-				<a href="https://ntm-pad.web.app" target="_blank" rel="noopener noreferrer">
-					<button class="btn btn-neutral">Demo</button>
-				</a>
 			</div>
 
 			<h2>ntm_pad</h2>
@@ -55,6 +52,8 @@
 					<button class="btn btn-neutral">Demo</button>
 				</a>
 			</div>
+
+			<iframe src="https://ntm-pad.web.app" title="ntm_pad" height="400" />
 
 			<h2>ntm-vscode</h2>
 
@@ -88,5 +87,8 @@
 	}
 	article > * > a {
 		text-decoration: underline;
+	}
+	iframe {
+		padding-top: 16px;
 	}
 </style>
