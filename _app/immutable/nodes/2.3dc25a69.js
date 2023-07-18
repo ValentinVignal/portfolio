@@ -1,4 +1,4 @@
-import{S as F,i as J,s as M,k as o,q as r,a as q,l,m as d,r as s,h as c,c as H,n as z,b as R,C as e,D as N}from"../chunks/index.d740bcaa.js";function B(A){let t,h,m,w,n,I,p,_,y,b,g,x,S,i,k,E,P;return{c(){t=o("article"),h=o("p"),m=r("Hello! I'm Valentin Vignal."),w=q(),n=o("p"),I=r("I'm a full-stack developer and I'm currently working at "),p=o("a"),_=r("Novade"),y=r(`
+import{S as F,i as J,s as M,k as o,q as r,a as q,l,m as d,r as s,h as c,c as H,n as z,b as R,C as e,D as N}from"../chunks/index.4acfd94f.js";function B(A){let t,h,m,w,n,I,p,_,y,b,g,x,S,i,k,E,P;return{c(){t=o("article"),h=o("p"),m=r("Hello! I'm Valentin Vignal."),w=q(),n=o("p"),I=r("I'm a full-stack developer and I'm currently working at "),p=o("a"),_=r("Novade"),y=r(`
 		in Singapore.`),b=q(),g=o("p"),x=r(`Passionate about software development, architecture and building tools for developers. I prefer
 		quality over quantity. Most experienced Flutter, Svelte and NestJS.`),S=q(),i=o("p"),k=r(`I'm a constant learner and enjoy keeping up to date with new technologies.
 		`),E=o("br"),P=r(`
