@@ -31,8 +31,12 @@
 					<button class="btn btn-neutral">Play store</button>
 				</a>
 			</div>
-
-			<iframe src="https://period-ik.web.app/" title="periodik" height="400" />
+			<div class="mockup-phone border-primary">
+				<div class="camera" />
+				<div class="display">
+					<iframe src="https://period-ik.web.app/" title="periodik" height="600" />
+				</div>
+			</div>
 
 			<h2>Libraries</h2>
 			<ul>
@@ -50,6 +54,9 @@
 		padding: 8px 0px;
 	}
 
+	.mockup-phone {
+		margin-top: 24px;
+	}
 	iframe {
 		padding-top: 16px;
 	}

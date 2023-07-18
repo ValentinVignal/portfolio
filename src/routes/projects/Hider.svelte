@@ -28,7 +28,12 @@
 				</a>
 			</div>
 
-			<iframe src="https://hider-c122b.web.app/" title="hider" height="400" />
+			<div class="mockup-phone border-primary">
+				<div class="camera" />
+				<div class="display">
+					<iframe src="https://hider-c122b.web.app/" title="hider" height="600" />
+				</div>
+			</div>
 
 			<h2>Libraries</h2>
 			<ul>
@@ -50,6 +55,9 @@
 		text-decoration: underline;
 	}
 
+	.mockup-phone {
+		margin-top: 24px;
+	}
 	iframe {
 		padding-top: 16px;
 	}
