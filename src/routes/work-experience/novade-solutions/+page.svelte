@@ -1,4 +1,9 @@
 <article class="prose">
+	<img
+		src="https://media.licdn.com/dms/image/C4D0BAQE2vYPi2C2EAQ/company-logo_200_200/0/1519922033388?e=1697673600&v=beta&t=_SehKVTRlmf7JP2sDVbjDjnM348Ml_37XG0CiV9m91U"
+		alt="Novade"
+		class="rounded h-16"
+	/>
 	<p>
 		<a href="https://www.novade.net/">Novade Solutions</a>
 		is a Singaporean company that provides a cloud-based platform for construction and real estate companies
@@ -67,3 +72,9 @@
 		</li>
 	</ul>
 </article>
+
+<style>
+	article {
+		text-align: justify;
+	}
+</style>
