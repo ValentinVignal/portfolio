@@ -9,7 +9,6 @@
 		</article>
 	</div>
 	<div class="collapse-content">
-		<div class="divider" />
 		<article class="prose">
 			<div class="actions">
 				<a
@@ -28,7 +27,7 @@
 				</a>
 			</div>
 
-			<h2>ntm-vscode</h2>
+			<h2>themed-color-palette-vscode-extension</h2>
 
 			<p>
 				A VSCode extension written in TypeScript to lint a <code>.theme.yaml</code> file used for
