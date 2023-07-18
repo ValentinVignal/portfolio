@@ -1,3 +1,7 @@
+<script>
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
+</script>
+
 <article class="prose">
 	<img
 		src="https://media.licdn.com/dms/image/C4D0BAQE2vYPi2C2EAQ/company-logo_200_200/0/1519922033388?e=1697673600&v=beta&t=_SehKVTRlmf7JP2sDVbjDjnM348Ml_37XG0CiV9m91U"
@@ -26,7 +30,42 @@
 		connect to a <a href="https://www.postgresql.org/">PostgreSQL</a> database. The API mostly uses
 		<a href="https://graphql.org/">GraphQL</a> .
 	</p>
+</article>
 
+<div class="collapse collapse-arrow bg-base-200">
+	<input type="checkbox" checked />
+	<div class="collapse-title text-xl font-medium">
+		<LogoTitle src="https://lite.novade.net/icons/favicon-96x96.png" title="Novade Lite" />
+	</div>
+	<div class="collapse-content">
+		<div class="wrap-iframe">
+			<iframe src="https://lite.novade.net" title="NovadeLite" />
+		</div>
+		<article>
+			<div class="actions">
+				<a href="https://lite.novade.net" target="_blank" rel="noopener noreferrer">
+					<button class="btn btn-neutral">Web</button>
+				</a>
+				<a
+					href="https://play.google.com/store/apps/details?id=net.novade.lite"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<button class="btn btn-neutral">Android</button>
+				</a>
+				<a
+					href="https://apps.apple.com/sg/app/novade-lite-field-management/id1579805253"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<button class="btn btn-neutral">iOS</button>
+				</a>
+			</div>
+		</article>
+	</div>
+</div>
+
+<article class="prose">
 	<p>
 		I joined the project in 2021 around 1 year after it started and work on it for 3 years. I worked
 		on it as a senior full stack developer designing and implementing the technical solutions. I
@@ -76,5 +115,25 @@
 <style>
 	article {
 		text-align: justify;
+	}
+
+	.wrap-iframe {
+		height: calc(600px * 0.75);
+		width: calc(100% / 0.75);
+
+		padding: 0px;
+		margin: 16px 0px;
+	}
+
+	.wrap-iframe > iframe {
+		zoom: 0.75;
+		height: calc(600px / 0.75);
+		width: 100%;
+		transform: scale(0.75);
+		transform-origin: 0 0;
+	}
+
+	.collapse {
+		margin: 16px 0px;
 	}
 </style>
