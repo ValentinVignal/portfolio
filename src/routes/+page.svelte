@@ -22,3 +22,9 @@
 		I do appreciate having a well-defined plan in place.
 	</p>
 </article>
+
+<style>
+	article {
+		text-align: justify;
+	}
+</style>
