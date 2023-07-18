@@ -1,4 +1,5 @@
 <script lang="ts">
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
 	import { ArrowTopRightOnSquare, Icon } from 'svelte-hero-icons';
 	import type { PageData } from './$types';
 
@@ -10,7 +11,7 @@
 		<a href={account.url} target="_blank" rel="noopener noreferrer">
 			<div class="card shadow-xl bg-base-100 max-w-96">
 				<div class="card-body">
-					{account.name}
+					<LogoTitle title={account.name} src={account.icon} />
 					<Icon src={ArrowTopRightOnSquare} size="25" />
 				</div>
 			</div>
