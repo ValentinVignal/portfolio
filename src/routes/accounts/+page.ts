@@ -21,9 +21,9 @@ const accounts: Account[] = [
     icon: 'https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo.png',
   },
   {
-    name: 'Twitter',
+    name: 'X',
     url: 'https://twitter.com/VignalValentin1',
-    icon: 'https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png',
+    icon: 'https://logos-world.net/wp-content/uploads/2023/07/X-Logo.png',
   },
   {
     name: 'Discord',
