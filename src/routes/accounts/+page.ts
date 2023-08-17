@@ -32,7 +32,7 @@ const accounts: Account[] = [
   },
   {
     name: 'Reddit',
-    url: 'https://www.reddit.com/user/ValentinVignalDev',
+    url: 'https://www.reddit.com/user/ValentinVignal',
     icon: 'https://logos-world.net/wp-content/uploads/2020/10/Reddit-Logo.png',
   },
   {
