@@ -2,7 +2,6 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 
-	// TODO: Fix
 	const getTitle = (path: string): string => {
 		if (base) {
 			path = path.replace(base, '');

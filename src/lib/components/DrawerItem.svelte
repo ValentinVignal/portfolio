@@ -1,18 +1,34 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { page } from '$app/stores';
 	import { Icon, type IconSource } from 'svelte-hero-icons';
 
 	export let href: string;
 	export let text: string;
 	export let icon: IconSource;
+
+	const isActive = (path: string): boolean => {
+		if (base) {
+			path = path.replace(base, '');
+		}
+		if (href === '/') {
+			return path === href;
+		}
+		return path.startsWith(href);
+	};
+
+	$: active = isActive($page.url.pathname);
 </script>
 
-<a
-	href="{base}{href}"
-	on:click={() => {
-		document.getElementById('drawer')?.click();
-	}}
->
-	<Icon src={icon} size="25" />
-	{text}
-</a>
+<li>
+	<a
+		href="{base}{href}"
+		class:active
+		on:click={() => {
+			document.getElementById('drawer')?.click();
+		}}
+	>
+		<Icon src={icon} size="25" solid={active} />
+		{text}
+	</a>
+</li>

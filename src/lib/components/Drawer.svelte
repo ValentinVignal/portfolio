@@ -27,27 +27,13 @@
 				<img src={ProfilePicture} alt="Profile" />
 			</a>
 			<ul class="menu w-80 text-base-content bg-base-200">
-				<li>
-					<DrawerItem href="/" text="Home" icon={Home} />
-				</li>
-				<li>
-					<DrawerItem href="/education" text="Education" icon={BuildingLibrary} />
-				</li>
-				<li>
-					<DrawerItem href="/work-experience" text="Work experience" icon={BuildingOffice} />
-				</li>
-				<li>
-					<DrawerItem href="/projects" text="Projects" icon={CommandLine} />
-				</li>
-				<li>
-					<DrawerItem href="/contributions" text="Contributions" icon={CodeBracket} />
-				</li>
-				<li>
-					<DrawerItem href="/skills" text="Skills" icon={Hashtag} />
-				</li>
-				<li>
-					<DrawerItem href="/accounts" text="Accounts" icon={User} />
-				</li>
+				<DrawerItem href="/" text="Home" icon={Home} />
+				<DrawerItem href="/education" text="Education" icon={BuildingLibrary} />
+				<DrawerItem href="/work-experience" text="Work experience" icon={BuildingOffice} />
+				<DrawerItem href="/projects" text="Projects" icon={CommandLine} />
+				<DrawerItem href="/contributions" text="Contributions" icon={CodeBracket} />
+				<DrawerItem href="/skills" text="Skills" icon={Hashtag} />
+				<DrawerItem href="/accounts" text="Accounts" icon={User} />
 			</ul>
 			<div class="bg-base-200">
 				<div class="divider" />
