@@ -32,7 +32,9 @@
 			<ul>
 				<li><a href="https://daisyui.com">daisyUI</a></li>
 				<li><a href="https://tailwindcss.com/">tailwindcss</a></li>
-				<li><a href="https://www.npmjs.com/package/svelte-hero-icons">svelte-hero-icons</a></li>
+				<li>
+					<a href="https://github.com/steeze-ui/icons">@steeze-ui/heroicons</a>
+				</li>
 			</ul>
 		</article>
 	</div>

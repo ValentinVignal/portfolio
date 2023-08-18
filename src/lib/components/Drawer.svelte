@@ -10,7 +10,7 @@
 		Hashtag,
 		Home,
 		User
-	} from 'svelte-hero-icons';
+	} from '@steeze-ui/heroicons';
 	import DrawerItem from './DrawerItem.svelte';
 </script>
 

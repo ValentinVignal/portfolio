@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { ChevronRight, Icon } from 'svelte-hero-icons';
+	import { ChevronRight } from '@steeze-ui/heroicons';
+	import { Icon } from '@steeze-ui/svelte-icon';
 	import type { PageData } from './$types';
 
 	export let data: PageData;

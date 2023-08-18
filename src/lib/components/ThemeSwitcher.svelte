@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { Cog6Tooth } from '@steeze-ui/heroicons';
+	import { Icon } from '@steeze-ui/svelte-icon';
 	import { onMount } from 'svelte';
-	import { Cog6Tooth, Icon } from 'svelte-hero-icons';
+
 	import { themeChange } from 'theme-change';
 	onMount(() => {
 		themeChange(false);

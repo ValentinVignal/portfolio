@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
-	import { Icon, type IconSource } from 'svelte-hero-icons';
+	import { Icon, type IconSource } from '@steeze-ui/svelte-icon';
 
 	export let href: string;
 	export let text: string;

@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { ArrowTopRightOnSquare, Icon } from 'svelte-hero-icons';
+	import { ArrowTopRightOnSquare } from '@steeze-ui/heroicons';
+	import { Icon } from '@steeze-ui/svelte-icon';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
