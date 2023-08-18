@@ -12,7 +12,7 @@
 			path = path.replace(base, '');
 		}
 		if (href === '/') {
-			return path === href;
+			return ['', '/'].includes(path);
 		}
 		return path.startsWith(href);
 	};
