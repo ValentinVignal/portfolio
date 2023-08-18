@@ -24,11 +24,12 @@
 	<a
 		href="{base}{href}"
 		class:active
+		class:text-accent={active}
 		on:click={() => {
 			document.getElementById('drawer')?.click();
 		}}
 	>
-		<Icon src={icon} size="25" solid={active} />
+		<Icon src={icon} size="25" theme={active ? 'solid' : undefined} class="primary" />
 		{text}
 	</a>
 </li>
