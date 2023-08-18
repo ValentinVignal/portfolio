@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
+	import { Bars3 } from '@steeze-ui/heroicons';
+	import { Icon } from '@steeze-ui/svelte-icon';
 
 	const getTitle = (path: string): string => {
 		if (base) {
@@ -32,22 +34,28 @@
 <div class="navbar bg-base-100">
 	<div class="flex-none">
 		<label for="drawer" class="btn btn-ghost drawer-button md:hidden">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				class="inline-block w-5 h-5 stroke-current"
-				><path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M4 6h16M4 12h16M4 18h16"
-				/>
-			</svg>
+			<Icon src={Bars3} size="24" />
 		</label>
 	</div>
-	<a class="btn btn-ghost normal-case text-xl" href="{base}/">Valentin Vignal</a>
-	{#if title}
-		<p class="text-lg">{title}</p>
-	{/if}
+	<div class="breadcrumbs">
+		<ul>
+			<li>
+				<a id="main-nav-bar-button" class="btn btn-ghost normal-case text-xl" href="{base}/"
+					>Valentin Vignal</a
+				>
+			</li>
+
+			{#if title}
+				<li>
+					<p class="text-lg">{title}</p>
+				</li>
+			{/if}
+		</ul>
+	</div>
 </div>
+
+<style>
+	#main-nav-bar-button {
+		text-decoration: none;
+	}
+</style>
