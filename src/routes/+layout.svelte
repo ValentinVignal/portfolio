@@ -1,8 +1,11 @@
 <script lang="ts">
+	import Analytics from '$lib/components/Analytics.svelte';
 	import Drawer from '$lib/components/Drawer.svelte';
 	import NavBar from '$lib/components/NavBar.svelte';
 	import '../app.css';
 </script>
+
+<Analytics />
 
 <Drawer>
 	<NavBar />
