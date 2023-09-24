@@ -20,6 +20,10 @@
 	{/each}
 </div>
 
+<svelte:head>
+	<title>Valentin Vignal - Accounts</title>
+</svelte:head>
+
 <style>
 	.container {
 		display: flex;

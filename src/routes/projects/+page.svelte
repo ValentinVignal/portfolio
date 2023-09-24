@@ -20,6 +20,10 @@
 	<MidiGenerator />
 </div>
 
+<svelte:head>
+	<title>Valentin Vignal - Projects</title>
+</svelte:head>
+
 <style>
 	.container {
 		display: flex;

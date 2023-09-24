@@ -46,6 +46,10 @@
 	{/each}
 </ul>
 
+<svelte:head>
+	<title>Valentin Vignal - Education</title>
+</svelte:head>
+
 <style>
 	ul {
 		width: 100%;

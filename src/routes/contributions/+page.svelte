@@ -18,6 +18,10 @@
 	<NestJsQuery />
 </div>
 
+<svelte:head>
+	<title>Valentin Vignal - Contributions</title>
+</svelte:head>
+
 <style>
 	.container {
 		display: flex;

@@ -22,6 +22,9 @@
 		I do appreciate having a well-defined plan in place.
 	</p>
 </article>
+<svelte:head>
+	<title>Valentin Vignal</title>
+</svelte:head>
 
 <style>
 	article {

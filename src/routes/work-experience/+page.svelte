@@ -61,6 +61,10 @@
 	{/each}
 </ul>
 
+<svelte:head>
+	<title>Valentin Vignal - Work Experience</title>
+</svelte:head>
+
 <style>
 	ul {
 		width: 100%;

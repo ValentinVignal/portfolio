@@ -112,6 +112,10 @@
 	</ul>
 </article>
 
+<svelte:head>
+	<title>Valentin Vignal - Novade</title>
+</svelte:head>
+
 <style>
 	article {
 		text-align: justify;
