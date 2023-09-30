@@ -77,6 +77,13 @@
 
 	<ul>
 		<li>
+			Re-organized the front-end code base into a mono repo using <a
+				href="https://melos.invertase.dev/"><code>melos</code></a
+			>. It reduced the average time of the build runner from 40+minutes to around 10 minutes. It
+			reduced the caching performances and the build and deployment time on the pipeline was reduced
+			by 50%.
+		</li>
+		<li>
 			Organized and architected the mobile and web routing system using <a
 				href="https://pub.dev/packages/go_router"><code>go_router</code></a
 			>.
@@ -96,8 +103,9 @@
 			prevented numerous of recurring bugs.
 		</li>
 		<li>
-			Implement the template form builder (similar to Google forms) which allow the user to define a
-			form's structure and then create and fill several instances of it.
+			Implemented the main and most used and complex feature of the application: the form template
+			builder. Similar to Google forms, it allow the user to define a form's structure and then
+			create and fill several instances of it.
 		</li>
 		<li>Set up the frontend CI pipelines to ensure code style and tests success.</li>
 		<li>
