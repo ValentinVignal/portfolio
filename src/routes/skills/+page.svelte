@@ -8,12 +8,17 @@
 <div class="skills-container">
 	{#each skills as skill (skill.id)}
 		<div class="card card-bordered shadow-xl bg-base-100">
-			<div class="card-body">
-				<div class="card-title">
-					{skill.name}
+			<a href={skill.url}>
+				<div class="card-body">
+					<div class="card-title">
+						<img
+							src={`https://www.google.com/s2/favicons?domain=${skill.url}`}
+							alt={`{skill.name} logo`}
+						/>
+						{skill.name}
+					</div>
 				</div>
-				<!-- {skill.name} -->
-			</div>
+			</a>
 		</div>
 	{/each}
 </div>
