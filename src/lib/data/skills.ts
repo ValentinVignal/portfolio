@@ -1,7 +1,7 @@
 export type Skill = {
   id: string;
   name: string;
-  url?: string;
+  url: string;
 }
 
 export const skills: Skill[] = [
