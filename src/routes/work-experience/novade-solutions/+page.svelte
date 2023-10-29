@@ -79,7 +79,7 @@
 		<li>
 			Re-organized the front-end code base into a mono repo using <a
 				href="https://melos.invertase.dev/"><code>melos</code></a
-			>. It reduced the average time of the build runner from 40+minutes to around 10 minutes. It
+			>. It reduced the average time of the build runner from 40+minutes to around 2 minutes. It
 			increased the caching performances and reduced the build and deployment time on the pipeline
 			was reduced by 50%.
 		</li>
