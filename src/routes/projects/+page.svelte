@@ -4,6 +4,7 @@
 	import Hider from './Hider.svelte';
 	import MidiGenerator from './MidiGenerator.svelte';
 	import Ntm from './Ntm.svelte';
+	import Padelistas from './Padelistas.svelte';
 	import Periodik from './Periodik.svelte';
 	import Portfolio from './Portfolio.svelte';
 	import ThemedColorPalette from './ThemedColorPalette.svelte';
@@ -11,6 +12,7 @@
 
 <div class="container">
 	<Ntm />
+	<Padelistas />
 	<Hider />
 	<Periodik />
 	<Portfolio />
