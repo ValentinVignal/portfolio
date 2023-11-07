@@ -5,7 +5,7 @@
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		<LogoTitle src="https://padelistas-app.web.app/favicon.png" title="Padelistas" />
+		<LogoTitle src="https://padelistas-app.web.app/favicon.svg" title="Padelistas" />
 		<article class="prose">
 			<p>A Flutter application using firebase to manage padel bookings in Singapore.</p>
 		</article>
