@@ -18,7 +18,7 @@ type WorkExperience = {
 const novade: Company = {
   name: 'Novade Solutions',
   url: 'https://www.novade.net/',
-  logo: 'https://media.licdn.com/dms/image/C4D0BAQE2vYPi2C2EAQ/company-logo_200_200/0/1519922033388?e=1697673600&v=beta&t=_SehKVTRlmf7JP2sDVbjDjnM348Ml_37XG0CiV9m91U',
+  logo: 'https://www.novade.net/wp-content/uploads/2022/02/Novade-Solutions-Logo.png',
 };
 
 const novadeDescription = 'on the main web and mobile application with Flutter for the front end, NestJS for the backend, GraphQL for the API and PostgreSQL for the database.';
