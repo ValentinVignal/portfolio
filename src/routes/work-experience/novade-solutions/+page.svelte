@@ -35,11 +35,16 @@
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" checked />
 	<div class="collapse-title text-xl font-medium">
-		<LogoTitle src="https://lite.novade.net/icons/favicon-96x96.png" title="Novade Lite" />
+		<LogoTitle src="https://lite.novade.net/icons/favicon.png" title="Novade Lite" />
 	</div>
 	<div class="collapse-content">
-		<div class="wrap-iframe">
-			<iframe src="https://lite.novade.net" title="NovadeLite" />
+		<div class="mockup-browser border border-info-content m-4">
+			<div class="mockup-browser-toolbar">
+				<div class="input border border-info-content">https://lite.novade.net/</div>
+			</div>
+			<div class="wrap-iframe">
+				<iframe src="https://lite.novade.net" title="NovadeLite" />
+			</div>
 		</div>
 		<article>
 			<div class="actions">
@@ -132,9 +137,6 @@
 	.wrap-iframe {
 		height: calc(600px * 0.75);
 		width: calc(100% / 0.75);
-
-		padding: 0px;
-		margin: 16px 0px;
 	}
 
 	.wrap-iframe > iframe {
