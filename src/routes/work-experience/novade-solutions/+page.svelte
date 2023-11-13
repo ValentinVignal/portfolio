@@ -4,7 +4,7 @@
 
 <article class="prose">
 	<img
-		src="https://media.licdn.com/dms/image/C4D0BAQE2vYPi2C2EAQ/company-logo_200_200/0/1519922033388?e=1697673600&v=beta&t=_SehKVTRlmf7JP2sDVbjDjnM348Ml_37XG0CiV9m91U"
+		src="https://www.novade.net/wp-content/uploads/2022/02/Novade-Solutions-Logo.png"
 		alt="Novade"
 		class="rounded h-16"
 	/>
