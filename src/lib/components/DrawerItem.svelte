@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
+	import { changeUrlPath } from '$lib/services/redirect';
 	import { Icon, type IconSource } from '@steeze-ui/svelte-icon';
 
 	export let href: string;
@@ -18,11 +19,12 @@
 	};
 
 	$: active = isActive($page.url.pathname);
+	$: url = changeUrlPath($page.url, href);
 </script>
 
 <li>
 	<a
-		href="{base}{href}"
+		href="{base}{url}"
 		class:active
 		on:click={() => {
 			document.getElementById('drawer')?.click();

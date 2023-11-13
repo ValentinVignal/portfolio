@@ -19,6 +19,7 @@ export const enum SkillId {
   Firebase = 'firebase',
   GithubActions = 'github-actions',
   VSCode = 'vscode',
+  ActionDartAnalyze = "ActionDartAnalyze"
 }
 
 export type Skill = {
@@ -49,3 +50,12 @@ export const skills: Skill[] = [
   { id: SkillId.GithubActions, name: 'Github actions', url: 'https://github.com/features/actions' },
   { id: SkillId.VSCode, name: 'VSCode', url: 'https://code.visualstudio.com/' },
 ];
+
+
+export const skillFromId = (ids: SkillId[]): Skill[] => {
+  return ids.map((id) => skills.find((skill) => skill.id === id)!);
+}
+
+export const getSelectedSkills = (url: URL): SkillId[] => {
+  return url.searchParams.getAll('skill') as SkillId[];
+}

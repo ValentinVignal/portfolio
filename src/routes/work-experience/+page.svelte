@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { page } from '$app/stores';
+	import { changeUrlPath } from '$lib/services/redirect';
 	import { ChevronRight } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import type { PageData } from './$types';
@@ -9,8 +11,9 @@
 
 <ul class="steps steps-vertical">
 	{#each data.workExperiences as workExperience (workExperience.id)}
+		{@const newUrl = changeUrlPath($page.url, `/work-experience/${workExperience.url}`)}
 		<li data-content="" class="step step-primary">
-			<a href={workExperience.url ? `${base}/work-experience/${workExperience.url}` : null}>
+			<a href={workExperience.url ? `${base}${newUrl}` : null}>
 				<div class="card shadow-xl bg-base-100 max-w-96 card-bordered">
 					<div class="card-body">
 						<div class="card-title">
