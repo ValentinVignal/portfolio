@@ -19,7 +19,6 @@ export const enum SkillId {
   Firebase = 'firebase',
   GithubActions = 'github-actions',
   VSCode = 'vscode',
-  ActionDartAnalyze = "ActionDartAnalyze"
 }
 
 export type Skill = {

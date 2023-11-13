@@ -1,7 +1,19 @@
+<script lang="ts">
+	import { SkillId } from '$lib/data/skills';
+	import Skills from '../../lib/components/Skills.svelte';
+
+	const ntmSkills = [SkillId.Dart];
+	const ntmPadSkills = [SkillId.Dart, SkillId.Flutter, SkillId.Riverpod, SkillId.Firebase];
+	const ntmVSCodeSkills = [SkillId.VSCode];
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Ntm
+		<div class="title">
+			ntm
+			<Skills skillIds={ntmSkills} />
+		</div>
 		<article class="prose">
 			<p>
 				A programming language built on top of dart inspired from <a
@@ -29,9 +41,15 @@
 					<button class="btn btn-neutral">GitHub</button>
 				</a>
 			</div>
-
-			<h2>ntm_pad</h2>
-
+		</article>
+		<div class="sub-title">
+			<article class="prose">
+				<h2>ntm_pad</h2>
+			</article>
+			<div class="w-4" />
+			<Skills skillIds={ntmPadSkills} />
+		</div>
+		<article class="prose">
 			<p>It is a web app that allows you to write and run ntm code in your browser. Try out</p>
 		</article>
 
@@ -54,9 +72,16 @@
 			</div>
 
 			<iframe src="https://ntm-pad.web.app" title="ntm_pad" height="400" />
+		</article>
+		<div class="sub-title">
+			<article class="prose">
+				<h2>ntm-vscode</h2>
+			</article>
+			<div class="w-4" />
+			<Skills skillIds={ntmVSCodeSkills} />
+		</div>
 
-			<h2>ntm-vscode</h2>
-
+		<article class="prose">
 			<p>A VSCode extension that allows you to highlight ntm code.</p>
 
 			<div class="actions">
@@ -90,5 +115,23 @@
 	}
 	iframe {
 		padding-top: 16px;
+	}
+
+	.title {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.sub-title {
+		display: flex;
+		align-self: center;
+	}
+
+	.collapse-title {
+		z-index: 1;
+		pointer-events: none;
+	}
+	.collapse-title a {
+		pointer-events: all;
 	}
 </style>
