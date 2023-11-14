@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Skills from '$lib/components/Skills.svelte';
 	import { ArrowTopRightOnSquare } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import type { PageData } from './$types';
@@ -19,8 +20,13 @@
 								{/if}
 								{education.name}
 							</div>
-							<div class="arrow-icon">
-								<Icon src={ArrowTopRightOnSquare} size="25" />
+							<div class="flex flex-row">
+								<div class="skills">
+									<Skills skillIds={education.skills} />
+								</div>
+								<div class="arrow-icon">
+									<Icon src={ArrowTopRightOnSquare} size="25" />
+								</div>
 							</div>
 						</div>
 						<p>
@@ -81,5 +87,9 @@
 
 	.arrow-icon {
 		size: 25px;
+	}
+	.skills {
+		padding: 4px;
+		flex-shrink: 0;
 	}
 </style>

@@ -1,3 +1,4 @@
+import { SkillId } from "$lib/data/skills";
 
 type Education = {
   url: string;
@@ -6,6 +7,7 @@ type Education = {
   end: Date;
   description?: string;
   logo?: string;
+  skills: SkillId[];
 }
 
 const education: Education[] = [
@@ -15,7 +17,10 @@ const education: Education[] = [
     description: 'Master in Computer Science - Specialization in Artificial Intelligence',
     start: new Date(2019, 0),
     end: new Date(2020, 5),
-    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/NUS_coat_of_arms.svg/800px-NUS_coat_of_arms.svg.png'
+    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/NUS_coat_of_arms.svg/800px-NUS_coat_of_arms.svg.png',
+    skills: [
+      SkillId.Python
+    ],
   },
   {
     name: 'CentralSupélec',
@@ -23,7 +28,10 @@ const education: Education[] = [
     description: 'Master in Engineering - Specialization in Computer Science and Electrical Engineering',
     start: new Date(2016, 8),
     end: new Date(2020, 5),
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/LogoCS.png/1280px-LogoCS.png'
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/LogoCS.png/1280px-LogoCS.png',
+    skills: [
+      SkillId.Python
+    ],
   },
   {
     name: 'Lycée Masséna - MPSI/MP*',
@@ -31,6 +39,9 @@ const education: Education[] = [
     description: 'Intensive two-year preparation to the highly competitive entrance examinations for the French Engineering Schools',
     start: new Date(2014, 8),
     end: new Date(2016, 5),
+    skills: [
+      SkillId.Python
+    ],
   }
 ];
 
