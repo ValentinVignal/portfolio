@@ -1,11 +1,24 @@
 <script>
 	import LogoTitle from '$lib/components/LogoTitle.svelte';
+	import { SkillId } from '$lib/data/skills';
+	import Skills from '../../lib/components/Skills.svelte';
+
+	const skills = [
+		SkillId.NestjsQuery,
+		SkillId.NestJS,
+		SkillId.GraphQL,
+		SkillId.PostgresQL,
+		SkillId.TypeScript
+	];
 </script>
 
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		<LogoTitle src="https://tripss.github.io/nestjs-query/img/favicon.ico" title="Nestjs-query" />
+		<div class="title">
+			<LogoTitle src="https://tripss.github.io/nestjs-query/img/favicon.ico" title="Nestjs-query" />
+			<Skills skillIds={skills} />
+		</div>
 		<article class="prose">
 			<p>
 				I made multiple contributions to <code>nestjs-query</code> mostly around the graphql API.
@@ -39,5 +52,13 @@
 <style>
 	.actions {
 		padding: 8px 0px;
+	}
+	.title {
+		display: flex;
+		justify-content: space-between;
+	}
+	.collapse-title {
+		z-index: 1;
+		pointer-events: none;
 	}
 </style>

@@ -1,7 +1,17 @@
+<script>
+	import { SkillId } from '$lib/data/skills';
+	import Skills from '../../lib/components/Skills.svelte';
+
+	const skills = [SkillId.GoRouter, SkillId.Flutter, SkillId.Dart];
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		<code>go_router</code>
+		<div class="title">
+			<code>go_router</code>
+			<Skills skillIds={skills} />
+		</div>
 		<article class="prose">
 			<p>
 				I made multiple contributions the flutter packages <code>go_router</code>
@@ -40,5 +50,13 @@
 <style>
 	.actions {
 		padding: 8px 0px;
+	}
+	.title {
+		display: flex;
+		justify-content: space-between;
+	}
+	.collapse-title {
+		z-index: 1;
+		pointer-events: none;
 	}
 </style>

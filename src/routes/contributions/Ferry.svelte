@@ -1,13 +1,26 @@
 <script>
 	import LogoTitle from '$lib/components/LogoTitle.svelte';
+	import { SkillId } from '$lib/data/skills';
+	import Skills from '../../lib/components/Skills.svelte';
+
+	const skills = [
+		SkillId.Ferry,
+		SkillId.BuiltValue,
+		SkillId.Flutter,
+		SkillId.Dart,
+		SkillId.GraphQL
+	];
 </script>
 
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		<LogoTitle src="https://ferrygraphql.com/img/favicon.ico" title="Ferry">
-			<code>ferry</code>
-		</LogoTitle>
+		<div class="title">
+			<LogoTitle src="https://ferrygraphql.com/img/favicon.ico" title="Ferry">
+				<code>ferry</code>
+			</LogoTitle>
+			<Skills skillIds={skills} />
+		</div>
 		<article class="prose">
 			<p>
 				I made multiple contributions to <code>ferry</code>, one of them to allow different request
@@ -38,5 +51,13 @@
 <style>
 	.actions {
 		padding: 8px 0px;
+	}
+	.title {
+		display: flex;
+		justify-content: space-between;
+	}
+	.collapse-title {
+		z-index: 1;
+		pointer-events: none;
 	}
 </style>
