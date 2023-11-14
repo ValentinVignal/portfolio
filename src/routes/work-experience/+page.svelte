@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
+	import Skills from '$lib/components/Skills.svelte';
 	import { changeUrlPath } from '$lib/services/redirect';
 	import { ChevronRight } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
@@ -32,11 +33,16 @@
 									{workExperience.title}
 								</div>
 							</div>
-							{#if workExperience.url}
-								<div class="arrow-icon">
-									<Icon src={ChevronRight} size="25" />
+							<div class="flex flex-row">
+								<div class="skills">
+									<Skills skillIds={workExperience.skills} />
 								</div>
-							{/if}
+								{#if workExperience.url}
+									<div class="arrow-icon">
+										<Icon src={ChevronRight} size="25" />
+									</div>
+								{/if}
+							</div>
 						</div>
 						<p>
 							<small>

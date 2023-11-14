@@ -1,3 +1,5 @@
+import { SkillId } from "$lib/data/skills";
+
 type Company = {
   name: string;
   url: string;
@@ -13,6 +15,7 @@ type WorkExperience = {
   start: Date;
   end?: Date;
   country: string;
+  skills: SkillId[],
 }
 
 const novade: Company = {
@@ -20,6 +23,26 @@ const novade: Company = {
   url: 'https://www.novade.net/',
   logo: 'https://www.novade.net/wp-content/uploads/2022/02/Novade-Solutions-Logo.png',
 };
+
+const novadeSkills = [
+  SkillId.Flutter,
+  SkillId.Dart,
+  SkillId.TypeScript,
+  SkillId.PostgresQL,
+  SkillId.Riverpod,
+  SkillId.GraphQL,
+  SkillId.GoRouter,
+  SkillId.Drift,
+  SkillId.Ferry,
+  SkillId.NestJS,
+  SkillId.NestjsQuery,
+  SkillId.Provider,
+  SkillId.BuiltValue,
+  SkillId.Freezed,
+  SkillId.SQLite,
+  SkillId.GithubActions,
+  SkillId.VSCode,
+];
 
 const novadeDescription = 'on the main web and mobile application with Flutter for the front end, NestJS for the backend, GraphQL for the API and PostgreSQL for the database.';
 
@@ -32,6 +55,7 @@ const workExperiences: WorkExperience[] = [
     description: `Senior full stack developer ${novadeDescription}`,
     start: new Date(2022, 8),
     country: 'Singapore',
+    skills: novadeSkills,
   },
   {
     id: 'novade-software-developer',
@@ -42,6 +66,7 @@ const workExperiences: WorkExperience[] = [
     start: new Date(2020, 5),
     end: new Date(2022, 7),
     country: 'Singapore',
+    skills: novadeSkills,
   },
   {
     id: 'novade-part-time',
@@ -51,6 +76,10 @@ const workExperiences: WorkExperience[] = [
     start: new Date(2019, 5),
     end: new Date(2020, 4),
     country: 'Singapore',
+    skills: [
+      SkillId.GithubActions,
+      SkillId.TypeScript,
+    ],
   }
 ];
 
