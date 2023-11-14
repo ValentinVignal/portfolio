@@ -1,7 +1,17 @@
+<script lang="ts">
+	import { SkillId } from '$lib/data/skills';
+	import Skills from '../../lib/components/Skills.svelte';
+
+	const skills = [SkillId.GithubActions, SkillId.TypeScript, SkillId.Dart, SkillId.Flutter];
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Action dart analyze
+		<div class="title">
+			Action dart analyze
+			<Skills skillIds={skills} />
+		</div>
 		<article class="prose">
 			<p>
 				A GitHub action written in TypeScript that analyzes dart code by running <code
@@ -40,5 +50,20 @@
 	}
 	article > * > a {
 		text-decoration: underline;
+	}
+
+	.title {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.sub-title {
+		display: flex;
+		align-self: center;
+	}
+
+	.collapse-title {
+		z-index: 1;
+		pointer-events: none;
 	}
 </style>

@@ -1,11 +1,18 @@
 <script>
 	import LogoTitle from '$lib/components/LogoTitle.svelte';
+	import { SkillId } from '$lib/data/skills';
+	import Skills from '../../lib/components/Skills.svelte';
+
+	const skills = [SkillId.Svelte, SkillId.TypeScript, SkillId.Firebase];
 </script>
 
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		<LogoTitle src="https://valentinvignal.github.io/portfolio/favicon.png" title="Portfolio" />
+		<div class="title">
+			<LogoTitle src="https://valentinvignal.github.io/portfolio/favicon.png" title="Portfolio" />
+			<Skills skillIds={skills} />
+		</div>
 		<article class="prose">
 			<p>My portfolio website made with SvelteKit.</p>
 		</article>
@@ -47,5 +54,14 @@
 
 	article > * > a {
 		text-decoration: underline;
+	}
+
+	.title {
+		display: flex;
+		justify-content: space-between;
+	}
+	.collapse-title {
+		z-index: 1;
+		pointer-events: none;
 	}
 </style>
