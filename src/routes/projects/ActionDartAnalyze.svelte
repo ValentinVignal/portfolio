@@ -57,11 +57,6 @@
 		justify-content: space-between;
 	}
 
-	.sub-title {
-		display: flex;
-		align-self: center;
-	}
-
 	.collapse-title {
 		z-index: 1;
 		pointer-events: none;
