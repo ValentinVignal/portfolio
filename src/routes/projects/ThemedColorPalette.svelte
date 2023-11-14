@@ -1,7 +1,19 @@
+<script lang="ts">
+	import { SkillId } from '$lib/data/skills';
+	import Skills from '../../lib/components/Skills.svelte';
+
+	const skills = [SkillId.Flutter, SkillId.Dart];
+
+	const vscodeSkills = [SkillId.VSCode, SkillId.TypeScript];
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Themed color palette
+		<div class="title">
+			Themed color palette
+			<Skills skillIds={skills} />
+		</div>
 		<article class="prose">
 			<p>
 				A dart builder to create theme classes from a <code>.yaml</code> file.
@@ -26,9 +38,15 @@
 					<button class="btn btn-neutral">pub.dev</button>
 				</a>
 			</div>
-
-			<h2>themed-color-palette-vscode-extension</h2>
-
+		</article>
+		<div class="sub-title">
+			<article class="prose">
+				<h2>themed-color-palette-vscode-extension</h2>
+			</article>
+			<div class="w-4" />
+			<Skills skillIds={vscodeSkills} />
+		</div>
+		<article class="prose">
 			<p>
 				A VSCode extension written in TypeScript to lint a <code>.theme.yaml</code> file used for
 				<code>themed_color_palette</code>.
@@ -60,5 +78,18 @@
 	}
 	article > * > a {
 		text-decoration: underline;
+	}
+	.title {
+		display: flex;
+		justify-content: space-between;
+	}
+	.collapse-title {
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	.sub-title {
+		display: flex;
+		align-self: center;
 	}
 </style>

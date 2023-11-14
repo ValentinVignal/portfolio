@@ -1,7 +1,17 @@
+<script lang="ts">
+	import { SkillId } from '$lib/data/skills';
+	import Skills from '../../lib/components/Skills.svelte';
+
+	const skills = [SkillId.Python];
+</script>
+
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
-		Midi generator
+		<div class="title">
+			Midi generator
+			<Skills skillIds={skills} />
+		</div>
 		<article class="prose">
 			A Python project to generate music midi files using a TensorFlow neural network.
 		</article>
@@ -42,5 +52,15 @@
 
 	article {
 		width: 100%;
+	}
+
+	.title {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.collapse-title {
+		z-index: 1;
+		pointer-events: none;
 	}
 </style>
