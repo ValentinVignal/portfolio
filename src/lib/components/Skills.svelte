@@ -2,14 +2,21 @@
 	import { page } from '$app/stores';
 	import { SkillId, getSelectedSkills, skillFromId } from '$lib/data/skills';
 	import { changeUrlSkill } from '$lib/services/redirect';
+	import { beforeUpdate } from 'svelte';
 
 	export let skillIds: SkillId[];
 	const skills = skillFromId(skillIds);
-	$: selectedSkills = getSelectedSkills($page.url);
+	let selectedSkills: SkillId[] = [];
+
+	let links = Array<string>(skills.length).map(() => $page.url.toString());
+	beforeUpdate(() => {
+		selectedSkills = getSelectedSkills($page.url);
+		links = skills.map((skill) => changeUrlSkill($page.url, skill.id).toString());
+	});
 </script>
 
 <div class="skills">
-	{#each skills as skill}
+	{#each skills as skill, index (skill.id)}
 		{@const selected = selectedSkills.includes(skill.id)}
 		<span
 			class="badge tooltip tooltip-bottom hover:ring-2 hover:ring-accent/50"
@@ -18,7 +25,7 @@
 			class:active={selected}
 			data-tip={skill.name}
 		>
-			<a href={changeUrlSkill($page.url, skill.id).toString()}>
+			<a href={links[index]}>
 				<img
 					src={`https://www.google.com/s2/favicons?domain=${skill.url}`}
 					alt={`${skill.name} logo`}

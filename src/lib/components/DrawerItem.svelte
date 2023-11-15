@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import { changeUrlPath } from '$lib/services/redirect';
 	import { Icon, type IconSource } from '@steeze-ui/svelte-icon';
+	import { beforeUpdate } from 'svelte';
 
 	export let href: string;
 	export let text: string;
@@ -19,7 +20,10 @@
 	};
 
 	$: active = isActive($page.url.pathname);
-	$: url = changeUrlPath($page.url, href);
+	let url = href;
+	beforeUpdate(() => {
+		url = changeUrlPath($page.url, href).toString();
+	});
 </script>
 
 <li>

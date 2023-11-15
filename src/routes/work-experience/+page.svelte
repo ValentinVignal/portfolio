@@ -5,16 +5,28 @@
 	import { changeUrlPath } from '$lib/services/redirect';
 	import { ChevronRight } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
+	import { beforeUpdate } from 'svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
+
+	let links = data.workExperiences.map((workExperience) =>
+		workExperience ? `/work-experience/${workExperience.url}` : null
+	);
+
+	beforeUpdate(() => {
+		links = data.workExperiences.map((workExperience) =>
+			workExperience
+				? changeUrlPath($page.url, `/work-experience/${workExperience.url}`).toString()
+				: null
+		);
+	});
 </script>
 
 <ul class="steps steps-vertical">
-	{#each data.workExperiences as workExperience (workExperience.id)}
-		{@const newUrl = changeUrlPath($page.url, `/work-experience/${workExperience.url}`)}
+	{#each data.workExperiences as workExperience, index (workExperience.id)}
 		<li data-content="" class="step step-primary">
-			<a href={workExperience.url ? `${base}${newUrl}` : null}>
+			<a href={workExperience.url ? `${base}${links[index]}` : null}>
 				<div class="card shadow-xl bg-base-100 max-w-96 card-bordered">
 					<div class="card-body">
 						<div class="card-title">
