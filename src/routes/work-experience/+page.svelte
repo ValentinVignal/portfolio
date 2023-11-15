@@ -11,7 +11,7 @@
 	export let data: PageData;
 
 	let links = data.workExperiences.map((workExperience) =>
-		workExperience ? `/work-experience/${workExperience.url}` : null
+		workExperience.url ? `${base}/work-experience/${workExperience.url}` : null
 	);
 
 	beforeUpdate(() => {
@@ -26,7 +26,7 @@
 <ul class="steps steps-vertical">
 	{#each data.workExperiences as workExperience, index (workExperience.id)}
 		<li data-content="" class="step step-primary">
-			<a href={workExperience.url ? `${base}${links[index]}` : null}>
+			<a href={links[index]}>
 				<div class="card shadow-xl bg-base-100 max-w-96 card-bordered">
 					<div class="card-body">
 						<div class="card-title">

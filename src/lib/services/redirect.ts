@@ -1,10 +1,11 @@
 import { goto } from "$app/navigation";
+import { base } from '$app/paths';
 import type { SkillId } from "$lib/data/skills";
 
 export const changeUrlPath = (url: URL, path: string): URL => {
 
   const newUrl = new URL(url);
-  newUrl.pathname = path;
+  newUrl.pathname = base + path;
   return newUrl;
 }
 

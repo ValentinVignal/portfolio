@@ -20,7 +20,7 @@
 	};
 
 	$: active = isActive($page.url.pathname);
-	let url = href;
+	let url = base + href;
 	beforeUpdate(() => {
 		url = changeUrlPath($page.url, href).toString();
 	});
@@ -28,7 +28,7 @@
 
 <li>
 	<a
-		href="{base}{url}"
+		href={url}
 		class:active
 		on:click={() => {
 			document.getElementById('drawer')?.click();
