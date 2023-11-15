@@ -1,16 +1,19 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { getSelectedSkills, type SkillId } from '$lib/data/skills';
+	import { beforeUpdate } from 'svelte';
 
 	import type { PageData } from './$types';
 	import SkillCard from './SkillCard.svelte';
 
-	$: selectedSkills = $page.url.searchParams.getAll('skill');
-	$: url = $page.url;
+	let selectedSkills: SkillId[] = [];
+
+	beforeUpdate(() => {
+		selectedSkills = getSelectedSkills($page.url);
+	});
 
 	export let data: PageData;
 	$: skills = data.skills;
-
-	let visible = false;
 </script>
 
 <div class="skills-container">
