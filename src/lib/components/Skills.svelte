@@ -18,20 +18,20 @@
 <div class="skills">
 	{#each skills as skill, index (skill.id)}
 		{@const selected = selectedSkills.includes(skill.id)}
-		<span
-			class="badge tooltip tooltip-bottom hover:ring-2 hover:ring-accent/50"
-			class:ring-accent={selected}
-			class:ring-2={selected}
-			class:active={selected}
-			data-tip={skill.name}
-		>
-			<a href={links[index]}>
+		<a href={links[index]}>
+			<span
+				class="badge badge-neutral tooltip tooltip-bottom hover:ring-2 hover:ring-accent/50"
+				class:ring-accent={selected}
+				class:ring-2={selected}
+				class:active={selected}
+				data-tip={skill.name}
+			>
 				<img
 					src={`https://www.google.com/s2/favicons?domain=${skill.url}`}
 					alt={`${skill.name} logo`}
 				/>
-			</a>
-		</span>
+			</span>
+		</a>
 	{/each}
 </div>
 
