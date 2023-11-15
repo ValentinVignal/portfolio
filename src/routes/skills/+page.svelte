@@ -1,25 +1,22 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+
 	import type { PageData } from './$types';
+	import SkillCard from './SkillCard.svelte';
+
+	$: selectedSkills = $page.url.searchParams.getAll('skill');
+	$: url = $page.url;
 
 	export let data: PageData;
 	$: skills = data.skills;
+
+	let visible = false;
 </script>
 
 <div class="skills-container">
 	{#each skills as skill (skill.id)}
-		<div class="card card-bordered shadow-xl bg-base-100">
-			<a href={skill.url}>
-				<div class="card-body">
-					<div class="card-title">
-						<img
-							src={`https://www.google.com/s2/favicons?domain=${skill.url}`}
-							alt={`{skill.name} logo`}
-						/>
-						{skill.name}
-					</div>
-				</div>
-			</a>
-		</div>
+		{@const selected = selectedSkills.includes(skill.id)}
+		<SkillCard {skill} {selected} />
 	{/each}
 </div>
 
