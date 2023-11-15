@@ -44,7 +44,5 @@
 		"vitest": "^0.34.6"
 	},
 	"type": "module",
-	"dependencies": {
-		"theme-change": "^2.5.0"
-	}
+	"dependencies": {}
 }
