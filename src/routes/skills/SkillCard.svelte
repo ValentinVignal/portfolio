@@ -18,9 +18,9 @@
 	});
 </script>
 
-<!-- TODO: Don't ignore -->
-<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
+	role="button"
+	tabindex="0"
 	class="card card-bordered shadow-xl bg-base-100 hover:ring-2 hover:ring-accent/50"
 	class:ring-2={selected}
 	class:ring-accent={selected}
