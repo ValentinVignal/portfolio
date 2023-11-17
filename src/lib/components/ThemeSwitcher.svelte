@@ -1,18 +1,13 @@
 <script lang="ts">
+	import { options } from '$lib/data/themes';
 	import { ChevronDown } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
+	import { onMount } from 'svelte';
+	import { themeChange } from 'theme-change';
 
-	const options = [
-		['default', 'Default'],
-		['dark', 'Dark'],
-		['light', 'Light'],
-		['halloween', 'Halloween'],
-		['forest', 'Forest'],
-		['dracula', 'Dracula'],
-		['night', 'Night'],
-		['sunset', 'Sunset'],
-		['grassland', 'Grassland']
-	];
+	onMount(() => {
+		themeChange(false);
+	});
 </script>
 
 <div class="dropdown dropdown-top m-4">
@@ -27,6 +22,7 @@
 			<li>
 				<input
 					tabindex="-1"
+					data-set-theme={value}
 					id="theme-dropdown-{value}"
 					type="radio"
 					name="theme-dropdown"
