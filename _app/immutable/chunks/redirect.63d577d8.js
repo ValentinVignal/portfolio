@@ -1,0 +1,1 @@
+import{e as l}from"./singletons.71443538.js";const t=(a,s)=>{const e=new URL(a);return e.pathname=l+s,e},c=(a,s)=>{const e=new URL(a);return a.searchParams.getAll("skill").includes(s)?e.searchParams.delete("skill",s):e.searchParams.append("skill",s),e};export{c as a,t as c};
