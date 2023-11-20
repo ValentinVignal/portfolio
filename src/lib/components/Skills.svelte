@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { SkillId, getSelectedSkills, skillFromId } from '$lib/data/skills';
 	import { changeUrlSkill } from '$lib/services/redirect';
@@ -18,7 +19,11 @@
 <div class="skills">
 	{#each skills as skill, index (skill.id)}
 		{@const selected = selectedSkills.includes(skill.id)}
-		<a href={links[index]}>
+		<button
+			on:click={() => {
+				goto(links[index], { noScroll: true });
+			}}
+		>
 			<span
 				class="badge badge-neutral tooltip tooltip-bottom hover:ring-2 hover:ring-accent/50"
 				class:ring-accent={selected}
@@ -31,12 +36,12 @@
 					alt={`${skill.name} logo`}
 				/>
 			</span>
-		</a>
+		</button>
 	{/each}
 </div>
 
 <style>
-	a {
+	button {
 		pointer-events: all;
 	}
 

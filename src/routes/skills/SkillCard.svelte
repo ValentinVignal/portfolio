@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import type { Skill } from '$lib/data/skills';
 	import { changeUrlSkill } from '$lib/services/redirect';
@@ -27,7 +28,11 @@
 	on:mouseenter={() => (visible = true)}
 	on:mouseleave={() => (visible = false)}
 >
-	<a href={link}>
+	<button
+		on:click={() => {
+			goto(link, { noScroll: true });
+		}}
+	>
 		<div class="card-body">
 			<div class="card-title">
 				<img
@@ -44,7 +49,7 @@
 				{/if}
 			</div>
 		</div>
-	</a>
+	</button>
 </div>
 
 <style>
