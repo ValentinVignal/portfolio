@@ -98,11 +98,16 @@
 		width: 100%;
 		text-align: left;
 	}
+
 	.card-title {
 		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
+		flex-direction: column;
+		align-items: flex-start;
+		@screen lg {
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: center;
+		}
 	}
 
 	.company-url {

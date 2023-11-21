@@ -50,5 +50,9 @@
 		flex-wrap: wrap;
 		gap: 0.5rem;
 		align-items: center;
+		padding-top: 4px;
+		@screen lg {
+			padding-top: 0px;
+		}
 	}
 </style>
