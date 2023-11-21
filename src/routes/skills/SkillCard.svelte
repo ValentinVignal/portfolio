@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import type { Skill } from '$lib/data/skills';
 	import { changeUrlSkill } from '$lib/services/redirect';
@@ -28,11 +27,7 @@
 	on:mouseenter={() => (visible = true)}
 	on:mouseleave={() => (visible = false)}
 >
-	<button
-		on:click={() => {
-			goto(link, { noScroll: true });
-		}}
-	>
+	<a data-sveltekit-noscroll href={link}>
 		<div class="card-body">
 			<div class="card-title">
 				<img
@@ -49,7 +44,7 @@
 				{/if}
 			</div>
 		</div>
-	</button>
+	</a>
 </div>
 
 <style>
