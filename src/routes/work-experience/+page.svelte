@@ -27,7 +27,7 @@
 	{#each data.workExperiences as workExperience, index (workExperience.id)}
 		<li data-content="" class="step step-primary">
 			<a href={links[index]}>
-				<div class="card shadow-xl bg-base-100 max-w-96 card-bordered">
+				<div class="card shadow-xl bg-base-100 card-bordered">
 					<div class="card-body">
 						<div class="card-title">
 							<div class="card-name">
