@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	{#if isLocalHost}
+	{#if !isLocalHost}
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-1SBGVLP63X">
 		</script>
 		<script>
