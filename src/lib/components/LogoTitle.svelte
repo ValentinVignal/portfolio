@@ -5,6 +5,13 @@
 	export let round: boolean = false;
 </script>
 
+<!--
+  @component
+
+  It displays a logo with a title.
+
+  If a `slot` is provided, it will be displayed instead of the `title`.
+-->
 <div>
 	<img {src} alt={alt ?? title} class="h-8" class:rounded={!round} class:rounded-full={round} />
 	{#if $$slots.default}
