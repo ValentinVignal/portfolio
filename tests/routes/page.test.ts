@@ -4,7 +4,7 @@ test('The home page should contain the main information', async ({ page }) => {
   await page.goto('/');
 
   // It should contain my name in the title.
-  await expect(page.title()).resolves.toMatch('Valentin Vignal');
+  await expect(page.title()).resolves.toEqual('Valentin Vignal');
 
   // It should a sentence to introduce myself.
   await expect(page.getByText("Hello! I'm Valentin Vignal.")).toBeVisible();
