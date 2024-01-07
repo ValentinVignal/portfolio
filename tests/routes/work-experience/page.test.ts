@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-test('The home page should contain the main information', async ({ page }) => {
+test('It should display the work experiences page', async ({ page }) => {
   await page.goto('/portfolio/work-experience');
 
   // It should have the correct title.
