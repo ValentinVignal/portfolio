@@ -14,6 +14,7 @@ test('It should display the accounts page', async ({ page }) => {
   await expect(page.getByText("Discord")).toBeVisible();
   await expect(page.getByText("Reddit")).toBeVisible();
   await expect(page.getByText("Google Play")).toBeVisible();
+  await expect(page.getByText("val.vignal@live.fr")).toBeVisible();
 
   await expect(page).toHaveScreenshot({ fullPage: true }); // Takes a screenshot of the page.
 });
