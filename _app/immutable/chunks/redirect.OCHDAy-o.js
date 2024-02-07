@@ -1,0 +1,1 @@
+import{b as l}from"./entry.s57B4u0P.js";const t=(a,s)=>{const e=new URL(a);return e.pathname=l+s,e},c=(a,s)=>{const e=new URL(a);return a.searchParams.getAll("skill").includes(s)?e.searchParams.delete("skill",s):e.searchParams.append("skill",s),e};export{t as a,c};
