@@ -1,5 +1,7 @@
 <script lang="ts">
-	export let src: string;
+	import { Icon, type IconSource } from '@steeze-ui/svelte-icon';
+
+	export let src: string | IconSource;
 	export let alt: string | null = null;
 	export let title: string;
 	export let round: boolean = false;
@@ -13,7 +15,11 @@
   If a `slot` is provided, it will be displayed instead of the `title`.
 -->
 <div>
-	<img {src} alt={alt ?? title} class="h-8" class:rounded={!round} class:rounded-full={round} />
+	{#if typeof src === 'string'}
+		<img {src} alt={alt ?? title} class="h-8" class:rounded={!round} class:rounded-full={round} />
+	{:else}
+		<Icon {src} size="25" class="h-8 me-2" />
+	{/if}
 	{#if $$slots.default}
 		<slot />
 	{:else}

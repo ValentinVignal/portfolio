@@ -12,8 +12,10 @@
 		<a href={account.url} target="_blank" rel="noopener noreferrer">
 			<div class="card shadow-xl bg-base-100 max-w-96">
 				<div class="card-body">
-					<LogoTitle title={account.name} src={account.icon} />
-					<Icon src={ArrowTopRightOnSquare} size="25" />
+					<LogoTitle title={account.name} src={account.logo} />
+					{#if account.url}
+						<Icon src={ArrowTopRightOnSquare} size="25" />
+					{/if}
 				</div>
 			</div>
 		</a>
