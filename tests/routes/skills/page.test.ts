@@ -27,6 +27,7 @@ test('It should display the skills page', async ({ page }) => {
   await expect(page.getByText("Firebase ")).toBeVisible();
   await expect(page.getByText("Github actions")).toBeVisible();
   await expect(page.getByText("VSCode")).toBeVisible();
+  await expect(page.getByText("React")).toBeVisible();
 
   await expect(page).toHaveScreenshot({ fullPage: true }); // Takes a screenshot of the page.
 });
