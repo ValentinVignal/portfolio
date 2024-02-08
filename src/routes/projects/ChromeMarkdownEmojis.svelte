@@ -2,7 +2,7 @@
 	import LogoTitle from '$lib/components/LogoTitle.svelte';
 	import { SkillId } from '$lib/data/skills';
 	import Skills from '../../lib/components/Skills.svelte';
-	const skills = [SkillId.TypeScript];
+	const skills = [SkillId.TypeScript, SkillId.React];
 </script>
 
 <div class="collapse collapse-arrow bg-base-200">

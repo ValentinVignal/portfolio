@@ -19,6 +19,7 @@ export const enum SkillId {
   Firebase = 'firebase',
   GithubActions = 'github-actions',
   VSCode = 'vscode',
+  React = 'react',
 }
 
 export type Skill = {
@@ -48,6 +49,7 @@ export const skills: Skill[] = [
   { id: SkillId.Firebase, name: 'Firebase', url: 'https://firebase.google.com/' },
   { id: SkillId.GithubActions, name: 'Github actions', url: 'https://github.com/features/actions' },
   { id: SkillId.VSCode, name: 'VSCode', url: 'https://code.visualstudio.com/' },
+  { id: SkillId.React, name: 'React', url: 'https://react.dev/' },
 ];
 
 
