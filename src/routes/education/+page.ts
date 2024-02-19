@@ -23,7 +23,7 @@ const education: Education[] = [
     ],
   },
   {
-    name: 'CentralSupélec',
+    name: 'CentraleSupélec',
     url: 'https://www.centralesupelec.fr/en',
     description: 'Master in Engineering - Specialization in Computer Science and Electrical Engineering',
     start: new Date(2016, 8),
