@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import type { Skill } from '$lib/data/skills';
+	import type { Skill, SkillId } from '$lib/data/skills';
+	import { GTagEvent, gtagEvent } from '$lib/services/gtag';
 	import { changeUrlSkill } from '$lib/services/redirect';
 	import { ArrowTopRightOnSquare } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
@@ -16,6 +17,17 @@
 	beforeUpdate(() => {
 		link = changeUrlSkill($page.url, skill.id).toString();
 	});
+
+	const onSkillSelect = (): void => {
+		gtagEvent({
+			event: GTagEvent.SkillClick,
+			data: {
+				location: 'skill-page',
+				selected: !selected,
+				id: skill.id
+			}
+		});
+	};
 </script>
 
 <div
@@ -27,7 +39,7 @@
 	on:mouseenter={() => (visible = true)}
 	on:mouseleave={() => (visible = false)}
 >
-	<a data-sveltekit-noscroll href={link}>
+	<a data-sveltekit-noscroll href={link} on:click={onSkillSelect}>
 		<div class="card-body">
 			<div class="card-title">
 				<img

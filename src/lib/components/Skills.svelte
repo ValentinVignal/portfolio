@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { SkillId, getSelectedSkills, skillFromId } from '$lib/data/skills';
+	import { GTagEvent, gtagEvent } from '$lib/services/gtag';
 	import { changeUrlSkill } from '$lib/services/redirect';
 	import { beforeUpdate } from 'svelte';
 
@@ -13,12 +14,26 @@
 		selectedSkills = getSelectedSkills($page.url);
 		links = skills.map((skill) => changeUrlSkill($page.url, skill.id).toString());
 	});
+
+	const handleClick = (id: SkillId): void => {
+		const wasSelected = selectedSkills.includes(id);
+
+		gtagEvent({
+			event: GTagEvent.SkillClick,
+			data: {
+				location: 'skill-chip',
+				id,
+				selected: !wasSelected
+			}
+		});
+	};
 </script>
 
 <div class="skills">
 	{#each skills as skill, index (skill.id)}
 		{@const selected = selectedSkills.includes(skill.id)}
-		<a data-sveltekit-noscroll href={links[index]}>
+
+		<a data-sveltekit-noscroll href={links[index]} on:click={() => handleClick(skill.id)}>
 			<span
 				class="badge badge-neutral tooltip tooltip-bottom hover:ring-2 hover:ring-accent/50"
 				class:ring-accent={selected}
