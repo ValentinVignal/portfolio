@@ -8,6 +8,7 @@
 	import Padelistas from './Padelistas.svelte';
 	import Periodik from './Periodik.svelte';
 	import Portfolio from './Portfolio.svelte';
+	import Pyronear from './Pyronear.svelte';
 	import ThemedColorPalette from './ThemedColorPalette.svelte';
 </script>
 
@@ -18,6 +19,7 @@
 	<Periodik />
 	<Portfolio />
 	<ActionDartAnalyze />
+	<Pyronear />
 	<AnimatedCollection />
 	<ThemedColorPalette />
 	<ChromeMarkdownEmojis />
