@@ -26,6 +26,9 @@
 				>
 					<button class="btn btn-neutral">GitHub</button>
 				</a>
+				<a href="https://pyronear.org/" target="_blank" rel="noopener noreferrer">
+					<button class="btn btn-neutral">Website</button>
+				</a>
 			</div>
 		</article>
 	</div>
