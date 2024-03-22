@@ -20,6 +20,7 @@ export const enum SkillId {
   GithubActions = 'github-actions',
   VSCode = 'vscode',
   React = 'react',
+  Rust = 'rust',
 }
 
 export type Skill = {
@@ -42,14 +43,15 @@ export const skills: Skill[] = [
   { id: SkillId.NestJS, name: 'NestJS', url: 'https://nestjs.com/' },
   { id: SkillId.Provider, name: 'Provider', url: 'https://pub.dev/packages/provider' },
   { id: SkillId.Svelte, name: 'Svelte', url: 'https://svelte.dev/' },
+  { id: SkillId.React, name: 'React', url: 'https://react.dev/' },
   { id: SkillId.BuiltValue, name: 'Built value', url: 'https://pub.dev/packages/built_value' },
   { id: SkillId.Freezed, name: 'Freezed', url: 'https://pub.dev/packages/freezed' },
   { id: SkillId.SQLite, name: 'SQLite', url: 'https://www.sqlite.org/index.html' },
-  { id: SkillId.Python, name: 'Python', url: 'https://www.python.org/' },
+  { id: SkillId.Rust, name: 'Rust', url: 'https://www.rust-lang.org/' },
   { id: SkillId.Firebase, name: 'Firebase', url: 'https://firebase.google.com/' },
   { id: SkillId.GithubActions, name: 'Github actions', url: 'https://github.com/features/actions' },
   { id: SkillId.VSCode, name: 'VSCode', url: 'https://code.visualstudio.com/' },
-  { id: SkillId.React, name: 'React', url: 'https://react.dev/' },
+  { id: SkillId.Python, name: 'Python', url: 'https://www.python.org/' },
 ];
 
 
