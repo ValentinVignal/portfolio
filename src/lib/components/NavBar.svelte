@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
-	import { Bars3 } from '@steeze-ui/heroicons';
+	import { ArrowDownTray, Bars3 } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
 
 	const getTitle = (path: string): string => {
@@ -52,10 +52,17 @@
 			{/if}
 		</ul>
 	</div>
+	<button class="btn btn-square">
+		<Icon src={ArrowDownTray} size="24" />
+	</button>
 </div>
 
 <style>
 	#main-nav-bar-button {
 		text-decoration: none;
+	}
+
+	.navbar > button {
+		margin-left: auto;
 	}
 </style>
