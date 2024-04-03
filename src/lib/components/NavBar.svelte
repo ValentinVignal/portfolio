@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import { ArrowDownTray, Bars3 } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
+	import DownloadResumeButton from './DownloadResumeButton.svelte';
 
 	const getTitle = (path: string): string => {
 		if (base) {
@@ -52,9 +53,9 @@
 			{/if}
 		</ul>
 	</div>
-	<button class="btn btn-square">
-		<Icon src={ArrowDownTray} size="24" />
-	</button>
+	<div class="download-resume-button">
+		<DownloadResumeButton />
+	</div>
 </div>
 
 <style>
@@ -62,7 +63,7 @@
 		text-decoration: none;
 	}
 
-	.navbar > button {
+	.navbar > .download-resume-button {
 		margin-left: auto;
 	}
 </style>
