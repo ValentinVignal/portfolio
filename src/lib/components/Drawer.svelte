@@ -7,6 +7,7 @@
 		BuildingOffice,
 		CodeBracket,
 		CommandLine,
+		DocumentText,
 		Hashtag,
 		Home,
 		User
@@ -34,6 +35,7 @@
 				<DrawerItem href="/contributions" text="Contributions" icon={CodeBracket} />
 				<DrawerItem href="/skills" text="Skills" icon={Hashtag} />
 				<DrawerItem href="/accounts" text="Accounts" icon={User} />
+				<DrawerItem href="/resume" text="My Resume" icon={DocumentText} />
 			</ul>
 			<div class="bg-base-200">
 				<div class="divider" />
