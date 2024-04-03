@@ -24,6 +24,8 @@
 				return 'Skills';
 			case `/accounts`:
 				return 'Accounts';
+			case `/resume`:
+				return 'My Resume';
 			default:
 				return '';
 		}
