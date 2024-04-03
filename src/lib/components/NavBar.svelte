@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
-	import { Bars3 } from '@steeze-ui/heroicons';
+	import { ArrowDownTray, Bars3 } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
+	import DownloadResumeButton from './DownloadResumeButton.svelte';
 
 	const getTitle = (path: string): string => {
 		if (base) {
@@ -52,10 +53,17 @@
 			{/if}
 		</ul>
 	</div>
+	<div class="download-resume-button">
+		<DownloadResumeButton />
+	</div>
 </div>
 
 <style>
 	#main-nav-bar-button {
 		text-decoration: none;
+	}
+
+	.navbar > .download-resume-button {
+		margin-left: auto;
 	}
 </style>
