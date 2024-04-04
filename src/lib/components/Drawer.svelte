@@ -83,4 +83,8 @@
 		padding-right: 8px;
 		padding-bottom: 16px;
 	}
+
+	.drawer-content {
+		height: 100vh;
+	}
 </style>
