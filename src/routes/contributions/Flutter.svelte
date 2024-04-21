@@ -18,7 +18,10 @@
 		</div>
 
 		<article class="prose">
-			<p>I made multiple contributions to the flutter framework, mostly around the theme.</p>
+			<p>
+				I made multiple contributions to the flutter framework, mostly around the theme and fixing
+				memory leaks.
+			</p>
 		</article>
 	</div>
 	<div class="collapse-content">
