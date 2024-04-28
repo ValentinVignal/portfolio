@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import ProfilePicture from '$lib/assets/images/profile-picture.jpg';
+	import ProfilePicture from '$lib/assets/images/profile-picture.jpg?enhanced';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import {
 		BuildingLibrary,
@@ -25,7 +25,7 @@
 
 		<div class="drawer-side-content bg-base-200">
 			<a href="{base}/" class="profile-picture">
-				<img src={ProfilePicture} alt="Profile" />
+				<enhanced:img src={ProfilePicture} alt="Profile" class="image" sizes="min(100px, 100vw)" />
 			</a>
 			<ul class="menu w-80 text-base-content bg-base-200">
 				<DrawerItem href="/" text="Home" icon={Home} />
@@ -48,11 +48,10 @@
 </div>
 
 <style>
-	img {
-		align-self: center;
+	.image {
+		max-width: 200px;
 		border-radius: 50%;
 		aspect-ratio: 1;
-		height: 100%;
 		object-fit: cover;
 	}
 	.profile-picture {
