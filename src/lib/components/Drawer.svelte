@@ -25,7 +25,14 @@
 
 		<div class="drawer-side-content bg-base-200">
 			<a href="{base}/" class="profile-picture">
-				<enhanced:img src={ProfilePicture} alt="Profile" class="image" sizes="min(100px, 100vw)" />
+				<div>
+					<enhanced:img
+						src={ProfilePicture}
+						alt="Profile"
+						class="image"
+						sizes="min(100px, 100vw)"
+					/>
+				</div>
 			</a>
 			<ul class="menu w-80 text-base-content bg-base-200">
 				<DrawerItem href="/" text="Home" icon={Home} />
@@ -48,19 +55,27 @@
 </div>
 
 <style>
-	.image {
+	.profile-picture {
+		max-width: 100%;
+		min-height: 120px;
+		margin: 16px 0px;
+		justify-content: center;
+		justify-self: center;
+		display: flex;
+	}
+
+	.profile-picture > div {
 		max-width: 200px;
+		max-height: 200px;
+		aspect-ratio: 1;
+	}
+
+	.image {
+		max-height: 100%;
+		max-width: 100%;
 		border-radius: 50%;
 		aspect-ratio: 1;
 		object-fit: cover;
-	}
-	.profile-picture {
-		max-height: 200px;
-		height: 25%;
-		min-height: 100px;
-		margin-top: 16px;
-		justify-content: center;
-		display: flex;
 	}
 
 	.drawer-side-content {
