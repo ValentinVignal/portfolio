@@ -12,7 +12,7 @@
 		<a href="https://www.novade.net/">Novade Solutions</a>
 		is a Singaporean company that provides a cloud-based platform for construction and real estate companies
 		to manage their quality, safety and maintenance processes. I joined the company in 2019 as a software
-		engineer and was promoted to senior software engineer in 2020.
+		engineer and was promoted to senior software engineer in 2022.
 	</p>
 
 	<p>
@@ -72,7 +72,7 @@
 
 <article class="prose">
 	<p>
-		I joined the project in 2021 around 1 year after it started and work on it for 3 years. I worked
+		I joined the project in 2020 around 1 year after it started and work on it for 4 years. I worked
 		on it as a senior full stack developer designing and implementing the technical solutions. I
 		spent the most time on the front end of the web application which was the most complex part of
 		the project.
@@ -82,45 +82,52 @@
 
 	<ul>
 		<li>
-			Re-organized the front-end code base into a mono repo using <a
+			Executed a comprehensive restructuring of the project's mono-repo architecture using <a
 				href="https://melos.invertase.dev/"><code>melos</code></a
-			>. It reduced the average time of the build runner from 40+minutes to around 2 minutes. It
-			increased the caching performances and reduced the build and deployment time on the pipeline
-			was reduced by 50%.
+			>, resulting in a 50% reduction in build, 10x reduction in code generation, and improved
+			scalability.
 		</li>
 		<li>
-			Organized and architected the mobile and web routing system using <a
-				href="https://pub.dev/packages/go_router"><code>go_router</code></a
-			>.
+			Achieved a 40% reduction in loading time by optimizing front-end development processes using
+			<a href="https://pub.dev/packages/riverpod"><code>riverpod</code></a> and
+			<a href="https://pub.dev/packages/go_router"><code>go_router</code></a>.
 		</li>
 		<li>
-			Revamped and standardized the state management solution using <a
-				href="https://pub.dev/packages/riverpod"><code>riverpod</code></a
-			> which increased the overall speed and performances.
+			Designed and developed a code generation tool for text key localization, effectively
+			identifying and preventing 100% of missing translation key bugs in production.
 		</li>
 		<li>
-			Revamped and re-designed the entire mobile and web application to use <a
-				href="https://docs.flutter.dev/cookbook/design/themes">Flutter's theme</a
-			>.
+			Integrated payment and subscription features, resulting in a 50% increase in revenue within
+			six months.
 		</li>
 		<li>
-			Implemented a code generation tool to manage and use text localizations in a safe way which
-			prevented numerous of recurring bugs.
+			Implemented a company wide Quality Assurance (QA) process and Continuous Integration (CI)
+			framework, leading to a 50% decrease in bug reports and 30% faster deployment cycles.
+		</li>
+		<li>
+			Established standardized protocols for code quality and consistency, resulting in a 40%
+			decrease in code review time and increase in developer productivity.
+		</li>
+		<li>
+			Overhauled the GraphQL API and PostgreSQL database, enhancing safety, relevance, and
+			performance, resulting in a 15% decrease of the project code size.
+		</li>
+		<li>
+			Code reviews and consultation on possible issues and edge cases reducing 10% of possible
+			regression issues.
+		</li>
+		<li>
+			Breaking down the user stories and estimations achieving near 100% project goals on time.
 		</li>
 		<li>
 			Implemented the main and most used and complex feature of the application: the form template
 			builder. Similar to Google forms, it allow the user to define a form's structure and then
 			create and fill several instances of it.
 		</li>
-		<li>Set up the frontend CI pipelines to ensure code style and tests success.</li>
 		<li>
-			Implemented the front end part of the in-app payment feature using <a
-				href="https://stripe.com/">Stripe</a
-			>.
-		</li>
-		<li>
-			Kick started the use of <a href="https://docs.flutter.dev/testing">Flutter tests</a> which helped
-			to prevent numerous bugs.
+			Optimized <a href="https://docs.flutter.dev/cookbook/design/themes">Flutter's theme</a> mechanism
+			for consistent theming, and led end-to-end migration from Material Design 2 to Material Design
+			3
 		</li>
 	</ul>
 </article>

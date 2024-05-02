@@ -69,7 +69,6 @@
 		justify-content: space-between;
 		min-width: 200px;
 		height: 100%;
-		/* overflow-y: auto; */
 		padding: 16px 0px;
 	}
 
