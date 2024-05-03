@@ -22,35 +22,36 @@
 	</div>
 	<div class="drawer-side z-10">
 		<label for="drawer" class="drawer-overlay" />
-
-		<div class="drawer-side-content bg-base-200">
-			<a href="{base}/" class="profile-picture">
-				<div>
-					<enhanced:img
-						src={ProfilePicture}
-						alt="Profile"
-						class="image"
-						sizes="min(100px, 100vw)"
-					/>
-				</div>
-			</a>
-			<ul class="menu w-80 text-base-content bg-base-200">
-				<DrawerItem href="/" text="Home" icon={Home} />
-				<DrawerItem href="/education" text="Education" icon={BuildingLibrary} />
-				<DrawerItem href="/work-experience" text="Work experience" icon={BuildingOffice} />
-				<DrawerItem href="/projects" text="Projects" icon={CommandLine} />
-				<DrawerItem href="/contributions" text="Contributions" icon={CodeBracket} />
-				<DrawerItem href="/skills" text="Skills" icon={Hashtag} />
-				<DrawerItem href="/accounts" text="Accounts" icon={User} />
-				<DrawerItem href="/resume" text="My Resume" icon={DocumentText} />
-			</ul>
-			<div class="bg-base-200">
-				<div class="divider" />
-				<div class="theme-switcher">
-					<ThemeSwitcher />
+		<aside>
+			<div class="drawer-side-content bg-base-200">
+				<a href="{base}/" class="profile-picture">
+					<div>
+						<enhanced:img
+							src={ProfilePicture}
+							alt="Profile"
+							class="image"
+							sizes="min(100px, 100vw)"
+						/>
+					</div>
+				</a>
+				<ul class="menu w-80 text-base-content bg-base-200">
+					<DrawerItem href="/" text="Home" icon={Home} />
+					<DrawerItem href="/education" text="Education" icon={BuildingLibrary} />
+					<DrawerItem href="/work-experience" text="Work experience" icon={BuildingOffice} />
+					<DrawerItem href="/projects" text="Projects" icon={CommandLine} />
+					<DrawerItem href="/contributions" text="Contributions" icon={CodeBracket} />
+					<DrawerItem href="/skills" text="Skills" icon={Hashtag} />
+					<DrawerItem href="/accounts" text="Accounts" icon={User} />
+					<DrawerItem href="/resume" text="My Resume" icon={DocumentText} />
+				</ul>
+				<div class="bg-base-200">
+					<div class="divider" />
+					<div class="theme-switcher">
+						<ThemeSwitcher />
+					</div>
 				</div>
 			</div>
-		</div>
+		</aside>
 	</div>
 </div>
 
@@ -83,7 +84,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		min-width: 200px;
-		height: 100%;
+		height: 100vh;
 		padding: 16px 0px;
 	}
 
@@ -99,5 +100,6 @@
 
 	.drawer-content {
 		height: 100vh;
+		overflow: auto;
 	}
 </style>
