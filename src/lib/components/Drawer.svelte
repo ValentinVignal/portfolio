@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import ProfilePicture from '$lib/assets/images/profile-picture.jpg?enhanced';
+	import ProfilePicture from '$lib/assets/images/profile-picture.jpeg?enhanced';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import {
 		BuildingLibrary,
