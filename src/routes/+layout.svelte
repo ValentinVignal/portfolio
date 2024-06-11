@@ -11,6 +11,7 @@
 	<NavBar />
 	<div class="container">
 		<slot />
+		<div class="h-4"></div>
 	</div>
 </Drawer>
 
