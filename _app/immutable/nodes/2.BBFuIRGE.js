@@ -1,4 +1,4 @@
-import{s as c,n as s}from"../chunks/scheduler.DuswzE1b.js";import{S as d,i as p,e as h,s as u,c as g,k as m,f,l as v,d as i,m as w,g as l}from"../chunks/index.oylfmZyz.js";function _(r){let e,o=`<p>Hello! I&#39;m Valentin Vignal.</p> <p>I&#39;m a full-stack developer and I&#39;m currently working at <a href="https://www.novade.net/">Novade</a>
+import{s as c,n as s}from"../chunks/scheduler.DuswzE1b.js";import{S as d,i as p,e as h,s as u,c as g,k as m,f,l as v,d as i,m as w,g as l}from"../chunks/index.VWL0RkfW.js";function _(r){let e,o=`<p>Hello! I&#39;m Valentin Vignal.</p> <p>I&#39;m a full-stack developer and I&#39;m currently working at <a href="https://www.novade.net/">Novade</a>
 		in Singapore.</p> <p>Passionate about software development, architecture and building tools for developers. I prefer
 		quality over quantity. Most experienced Flutter, Svelte and NestJS.</p> <p>I&#39;m a constant learner and enjoy keeping up to date with new technologies.
 		<br/>
