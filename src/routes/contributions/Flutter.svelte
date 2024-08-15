@@ -19,8 +19,12 @@
 
 		<article class="prose">
 			<p>
-				I made multiple contributions to the flutter framework, mostly around the theme and fixing
-				memory leaks.
+				I am a member of the Flutter Github organization with
+				<a href="https://github.com/flutter/flutter/pull/152361#pullrequestreview-2201981291">
+					contributor access
+				</a>
+				to the repositories with over 100 contributions. My contributions to the flutter framework are
+				mostly around the theme, testing and fixing memory leaks.
 			</p>
 		</article>
 	</div>
