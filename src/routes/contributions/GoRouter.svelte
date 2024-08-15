@@ -14,8 +14,11 @@
 		</div>
 		<article class="prose">
 			<p>
-				I made multiple contributions the flutter packages <code>go_router</code>
-				and <code>go_router_builder</code> mostly around imperative routing and code generation.
+				I led multiple major releases I made multiple contributions the flutter packages <code
+					>go_router</code
+				>
+				and <code>go_router_builder</code>. Those were mostly about imperative routing and code
+				generation.
 			</p>
 		</article>
 	</div>
