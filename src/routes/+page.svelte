@@ -13,6 +13,10 @@
 		Passionate about software development, architecture and building tools for developers. I prefer
 		quality over quantity. Most experienced Flutter, Svelte and NestJS.
 	</p>
+	<p>
+		I'm a member of the Flutter Github organization with contributor access and over 100
+		contributions.
+	</p>
 
 	<p>
 		I'm a constant learner and enjoy keeping up to date with new technologies.
