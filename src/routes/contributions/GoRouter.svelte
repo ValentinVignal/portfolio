@@ -14,7 +14,7 @@
 		</div>
 		<article class="prose">
 			<p>
-				I led multiple major releases I made multiple contributions the flutter packages <code
+				I led multiple major releases and made multiple contributions the flutter packages <code
 					>go_router</code
 				>
 				and <code>go_router_builder</code>. Those were mostly about imperative routing and code
