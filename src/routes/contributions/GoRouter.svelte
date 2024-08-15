@@ -51,6 +51,9 @@
 </div>
 
 <style>
+	article {
+		text-align: justify;
+	}
 	.actions {
 		padding: 8px 0px;
 	}

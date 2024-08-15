@@ -61,4 +61,8 @@
 		z-index: 1;
 		pointer-events: none;
 	}
+
+	article {
+		text-align: justify;
+	}
 </style>
