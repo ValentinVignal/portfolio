@@ -1,4 +1,8 @@
-<script></script>
+<script>
+	import Badges from '$lib/components/badges/Badges.svelte';
+</script>
+
+<Badges />
 
 <article class="prose">
 	<p>Hello! I'm Valentin Vignal.</p>
