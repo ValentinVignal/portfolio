@@ -22,7 +22,11 @@
 	<div class="collapse-content">
 		<article class="prose">
 			<div class="actions">
-				<a href="NotificationBlocker" target="_blank" rel="noopener noreferrer">
+				<a
+					href="https://github.com/ValentinVignal/NotificationBlocker"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<button class="btn btn-neutral">GitHub</button>
 				</a>
 				<a
