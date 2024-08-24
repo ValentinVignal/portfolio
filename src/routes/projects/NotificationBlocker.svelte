@@ -2,7 +2,7 @@
 	import LogoTitle from '$lib/components/LogoTitle.svelte';
 	import { SkillId } from '$lib/data/skills';
 	import Skills from '../../lib/components/Skills.svelte';
-	const skills = [SkillId.Kotlin, SkillId.SQLite, SkillId.Android];
+	const skills = [SkillId.Kotlin, SkillId.SQLite, SkillId.JetpackCompose, SkillId.Android];
 </script>
 
 <div class="collapse collapse-arrow bg-base-200">
@@ -40,13 +40,6 @@
 <style>
 	.actions {
 		padding: 8px 0px;
-	}
-
-	.mockup-phone {
-		margin-top: 24px;
-	}
-	iframe {
-		padding-top: 16px;
 	}
 
 	.title {

@@ -22,7 +22,8 @@ export const enum SkillId {
 	React = 'react',
 	Rust = 'rust',
 	Android = 'android',
-	Kotlin = 'kotlin'
+	Kotlin = 'kotlin',
+	JetpackCompose = 'jetpack-compose'
 }
 
 export type Skill = {
@@ -52,6 +53,11 @@ export const skills: Skill[] = [
 	{ id: SkillId.SQLite, name: 'SQLite', url: 'https://www.sqlite.org/index.html' },
 	{ id: SkillId.Rust, name: 'Rust', url: 'https://www.rust-lang.org/' },
 	{ id: SkillId.Firebase, name: 'Firebase', url: 'https://firebase.google.com/' },
+	{
+		id: SkillId.JetpackCompose,
+		name: 'Jetpack Compose',
+		url: 'https://developer.android.com/compose'
+	},
 	{ id: SkillId.Android, name: 'Android', url: 'https://developer.android.com/' },
 	{ id: SkillId.GithubActions, name: 'Github actions', url: 'https://github.com/features/actions' },
 	{ id: SkillId.VSCode, name: 'VSCode', url: 'https://code.visualstudio.com/' },
