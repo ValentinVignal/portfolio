@@ -4,6 +4,7 @@
 	import ChromeMarkdownEmojis from './ChromeMarkdownEmojis.svelte';
 	import Hider from './Hider.svelte';
 	import MidiGenerator from './MidiGenerator.svelte';
+	import NotificationBlocker from './NotificationBlocker.svelte';
 	import Ntm from './Ntm.svelte';
 	import Padelistas from './Padelistas.svelte';
 	import Periodik from './Periodik.svelte';
@@ -21,6 +22,7 @@
 	<ActionDartAnalyze />
 	<Pyronear />
 	<AnimatedCollection />
+	<NotificationBlocker />
 	<ThemedColorPalette />
 	<ChromeMarkdownEmojis />
 	<MidiGenerator />
