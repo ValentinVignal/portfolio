@@ -13,7 +13,9 @@ test('It should display the projects page', async ({ page }) => {
 	await expect(page.getByText('Periodik')).toBeVisible();
 	await expect(page.getByText('Portfolio', { exact: true })).toBeVisible();
 	await expect(page.getByText('Action dart analyze')).toBeVisible();
+	await expect(page.getByText('Pyronear')).toBeVisible();
 	await expect(page.getByText('animated_collection')).toBeVisible();
+	await expect(page.getByText('NotificationBlocker')).toBeVisible();
 	await expect(page.getByText('Themed color palette')).toBeVisible();
 	await expect(page.getByText('Chrome markdown emoji')).toBeVisible();
 	await expect(page.getByText('midi generator')).toBeVisible();
