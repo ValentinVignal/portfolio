@@ -24,7 +24,8 @@
 					contributor access
 				</a>
 				to the repositories with over 100 contributions. My contributions to the flutter framework are
-				mostly around the theme, testing and fixing memory leaks.
+				mostly around the theme, testing and fixing memory leaks.<br />I'm also a talker at the
+				Flutter Singapore meetup.
 			</p>
 		</article>
 	</div>
