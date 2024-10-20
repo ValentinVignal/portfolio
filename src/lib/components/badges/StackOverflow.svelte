@@ -15,7 +15,6 @@
 			{ method: 'GET' }
 		);
 		const data: StackOverFlowData = await res.json();
-		console.log('hey');
 		return data.items[0];
 	};
 
