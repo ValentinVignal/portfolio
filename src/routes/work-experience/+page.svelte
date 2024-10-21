@@ -2,11 +2,13 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import Skills from '$lib/components/Skills.svelte';
-	import { changeUrlPath } from '$lib/services/redirect';
+	import { changeUrlPath, redirect } from '$lib/services/redirect';
 	import { ChevronRight } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import { beforeUpdate } from 'svelte';
 	import type { PageData } from './$types';
+	import { goto } from '$app/navigation';
+	import ConditionalAnchor from '$lib/components/ConditionalAnchor.svelte';
 
 	export let data: PageData;
 
@@ -26,36 +28,48 @@
 <ul class="steps steps-vertical">
 	{#each data.workExperiences as workExperience, index (workExperience.id)}
 		<li data-content="" class="step step-primary">
-			<a href={links[index]}>
-				<div class="card shadow-xl bg-base-100 card-bordered">
-					<div class="card-body">
-						<div class="card-title">
-							<div class="card-name">
+			<div class="card shadow-xl bg-base-100 card-bordered">
+				<div class="card-body">
+					<div class="card-title">
+						<div class="card-name">
+							<a
+								href={workExperience.company.url}
+								class="company-url"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<img src={workExperience.company.logo} alt="logo" class="h-12 rounded" />
-								<div>
-									<a
-										href={workExperience.company.url}
-										class="company-url"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										{workExperience.company.name}
-									</a>
-									-
+							</a>
+							<div>
+								<a
+									href={workExperience.company.url}
+									class="company-url"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									{workExperience.company.name}
+								</a>
+								-
+								<ConditionalAnchor link={links[index]}>
 									{workExperience.title}
-								</div>
+								</ConditionalAnchor>
 							</div>
-							<div class="flex flex-row">
-								<div class="skills">
-									<Skills skillIds={workExperience.skills} />
-								</div>
-								{#if workExperience.url}
+						</div>
+						<div class="flex flex-row">
+							<div class="skills">
+								<Skills skillIds={workExperience.skills} />
+							</div>
+							{#if workExperience.url}
+								<a href={links[index]}>
 									<div class="arrow-icon">
 										<Icon src={ChevronRight} size="25" />
 									</div>
-								{/if}
-							</div>
+								</a>
+							{/if}
 						</div>
+					</div>
+
+					<ConditionalAnchor link={links[index]}>
 						<p>
 							<small>
 								{workExperience.start.toLocaleDateString('en-GB', {
@@ -75,9 +89,9 @@
 								{workExperience.description}
 							</p>
 						{/if}
-					</div>
+					</ConditionalAnchor>
 				</div>
-			</a>
+			</div>
 		</li>
 	{/each}
 </ul>
