@@ -141,4 +141,8 @@
 	img {
 		margin-right: 8px;
 	}
+
+	a:has(img) {
+		display: contents;
+	}
 </style>
