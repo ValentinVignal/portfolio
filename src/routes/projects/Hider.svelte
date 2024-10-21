@@ -44,9 +44,9 @@
 			</div>
 
 			<div class="mockup-phone border-primary">
-				<div class="camera" />
+				<div class="camera"></div>
 				<div class="display">
-					<iframe src="https://hider-c122b.web.app/" title="hider" height="600" />
+					<iframe src="https://hider-c122b.web.app/" title="hider" height="600"></iframe>
 				</div>
 			</div>
 

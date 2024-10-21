@@ -47,21 +47,27 @@
 					alt={`${skill.name} logo`}
 				/>
 				{skill.name}
-				{#if visible}
-					<button class="link-icon btn btn-square" transition:slide={{ axis: 'x' }}>
-						<a href={skill.url} target="_blank" rel="noopener noreferrer">
-							<Icon src={ArrowTopRightOnSquare} size="25" />
-						</a>
-					</button>
-				{/if}
 			</div>
 		</div>
 	</a>
+	{#if visible}
+		<button class="link-icon btn btn-square m-4" transition:slide={{ axis: 'x' }}>
+			<a href={skill.url} target="_blank" rel="noopener noreferrer">
+				<Icon src={ArrowTopRightOnSquare} size="25" />
+			</a>
+		</button>
+	{/if}
 </div>
 
 <style>
 	.card-title {
 		position: relative;
+	}
+
+	.card {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
 	}
 
 	.link-icon {

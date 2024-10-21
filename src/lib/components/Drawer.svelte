@@ -21,10 +21,10 @@
 		<slot />
 	</div>
 	<div class="drawer-side z-10">
-		<label for="drawer" class="drawer-overlay" />
+		<label for="drawer" class="drawer-overlay"></label>
 		<aside>
 			<div class="drawer-side-content bg-base-200">
-				<a href="{base}/" class="profile-picture">
+				<a href="{base}/" class="profile-picture" aria-label="Profile">
 					<div>
 						<enhanced:img
 							src={ProfilePicture}
@@ -45,7 +45,7 @@
 					<DrawerItem href="/resume" text="My Resume" icon={DocumentText} />
 				</ul>
 				<div class="bg-base-200">
-					<div class="divider" />
+					<div class="divider"></div>
 					<div class="theme-switcher">
 						<ThemeSwitcher />
 					</div>

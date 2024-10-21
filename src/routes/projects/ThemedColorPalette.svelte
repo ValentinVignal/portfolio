@@ -43,7 +43,7 @@
 			<article class="prose">
 				<h2>themed-color-palette-vscode-extension</h2>
 			</article>
-			<div class="w-4" />
+			<div class="w-4"></div>
 			<Skills skillIds={vscodeSkills} />
 		</div>
 		<article class="prose">

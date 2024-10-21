@@ -25,7 +25,7 @@
 		</article>
 	</div>
 	<div class="collapse-content">
-		<div class="divider" />
+		<div class="divider"></div>
 		<article class="prose">
 			<p>
 				Ntm is composed of scanner and a parser which create an AST. The interpreter interprets the
@@ -46,7 +46,7 @@
 			<article class="prose">
 				<h2>ntm_pad</h2>
 			</article>
-			<div class="w-4" />
+			<div class="w-4"></div>
 			<Skills skillIds={ntmPadSkills} />
 		</div>
 		<article class="prose">
@@ -71,13 +71,13 @@
 				</a>
 			</div>
 
-			<iframe src="https://ntm-pad.web.app" title="ntm_pad" height="400" />
+			<iframe src="https://ntm-pad.web.app" title="ntm_pad" height="400"></iframe>
 		</article>
 		<div class="sub-title">
 			<article class="prose">
 				<h2>ntm-vscode</h2>
 			</article>
-			<div class="w-4" />
+			<div class="w-4"></div>
 			<Skills skillIds={ntmVSCodeSkills} />
 		</div>
 

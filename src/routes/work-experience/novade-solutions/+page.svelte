@@ -43,7 +43,7 @@
 				<div class="input border border-info-content">https://lite.novade.net/</div>
 			</div>
 			<div class="wrap-iframe">
-				<iframe src="https://lite.novade.net" title="NovadeLite" />
+				<iframe src="https://lite.novade.net" title="NovadeLite"></iframe>
 			</div>
 		</div>
 		<article>

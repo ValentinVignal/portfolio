@@ -45,9 +45,9 @@
 				</a>
 			</div>
 			<div class="mockup-phone border-primary">
-				<div class="camera" />
+				<div class="camera"></div>
 				<div class="display">
-					<iframe src="https://period-ik.web.app/" title="periodik" height="600" />
+					<iframe src="https://period-ik.web.app/" title="periodik" height="600"></iframe>
 				</div>
 			</div>
 

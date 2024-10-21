@@ -39,9 +39,9 @@
 			</div>
 
 			<div class="mockup-phone border-primary">
-				<div class="camera" />
+				<div class="camera"></div>
 				<div class="display">
-					<iframe src="https://padelistas-app.web.app/" title="padelistas" height="600" />
+					<iframe src="https://padelistas-app.web.app/" title="padelistas" height="600"></iframe>
 				</div>
 			</div>
 

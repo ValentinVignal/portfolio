@@ -10,44 +10,46 @@
 <ul class="steps steps-vertical">
 	{#each data.education as education (education.url)}
 		<li data-content="" class="step step-primary">
-			<a href={education.url}>
-				<div class="card shadow-xl bg-base-100 card-bordered">
-					<div class="card-body">
-						<div class="card-title">
+			<div class="card shadow-xl bg-base-100 card-bordered">
+				<div class="card-body">
+					<div class="card-title">
+						<a href={education.url}>
 							<div class="card-name">
 								{#if education.logo}
 									<img src={education.logo} alt={education.name} class="h-12 rounded" />
 								{/if}
 								{education.name}
 							</div>
-							<div class="flex flex-row">
-								<div class="skills">
-									<Skills skillIds={education.skills} />
-								</div>
+						</a>
+						<div class="flex flex-row">
+							<div class="skills">
+								<Skills skillIds={education.skills} />
+							</div>
+							<a href={education.url}>
 								<div class="arrow-icon">
 									<Icon src={ArrowTopRightOnSquare} size="25" />
 								</div>
-							</div>
+							</a>
 						</div>
-						<p>
-							<small>
-								{education.start.toLocaleDateString('en-GB', {
-									month: 'short',
-									year: 'numeric'
-								})} - {education.end.toLocaleDateString('en-GB', {
-									month: 'short',
-									year: 'numeric'
-								})}
-							</small>
-						</p>
-						{#if education.description}
-							<p>
-								{education.description}
-							</p>
-						{/if}
 					</div>
+					<p>
+						<small>
+							{education.start.toLocaleDateString('en-GB', {
+								month: 'short',
+								year: 'numeric'
+							})} - {education.end.toLocaleDateString('en-GB', {
+								month: 'short',
+								year: 'numeric'
+							})}
+						</small>
+					</p>
+					{#if education.description}
+						<p>
+							{education.description}
+						</p>
+					{/if}
 				</div>
-			</a>
+			</div>
 		</li>
 	{/each}
 </ul>
