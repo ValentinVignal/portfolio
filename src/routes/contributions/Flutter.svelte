@@ -24,13 +24,30 @@
 					contributor access
 				</a>
 				to the repositories with over 100 contributions. My contributions to the flutter framework are
-				mostly around the theme, testing and fixing memory leaks.<br />I'm also a talker at the
-				Flutter Singapore meetup.
+				mostly around the theme, testing and fixing memory leaks.
 			</p>
 		</article>
 	</div>
 	<div class="collapse-content">
 		<article class="prose">
+			<ul>
+				<li>I'm a talker at the Flutter Singapore meetup.</li>
+				<li>
+					I've been mentioned in Flutter's notable commits. For example:
+					<ul>
+						<li>
+							<a href="https://github.com/flutter/flutter/issues/121415#issuecomment-2465885271"
+								>This one</a
+							>
+							or
+							<a href="https://github.com/flutter/flutter/issues/121415#issuecomment-2495120324"
+								>this one</a
+							> about testing flutter examples.
+						</li>
+					</ul>
+				</li>
+			</ul>
+
 			<div class="actions">
 				<a
 					href="https://github.com/flutter/flutter/pulls?q=author%3AValentinVignal+"
