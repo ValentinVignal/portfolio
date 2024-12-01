@@ -11,7 +11,10 @@
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
 		<div class="title">
-			<LogoTitle src="https://drift.simonbinder.eu/favicons/favicon-32x32.png" title="Drift">
+			<LogoTitle
+				src="https://www.google.com/s2/favicons?domain=https://drift.simonbinder.eu"
+				title="Drift"
+			>
 				<code>drift</code>
 			</LogoTitle>
 			<Skills skillIds={skills} />
