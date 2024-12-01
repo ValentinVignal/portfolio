@@ -3,7 +3,7 @@
 
 	export let src: string | IconSource;
 	export let alt: string | null = null;
-	export let title: string;
+	export let title: string | null = null;
 	export let round: boolean = false;
 </script>
 

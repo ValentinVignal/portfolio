@@ -1,4 +1,5 @@
 <script lang="ts">
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
 	import { SkillId } from '$lib/data/skills';
 	import Skills from '../../lib/components/Skills.svelte';
 
@@ -9,7 +10,11 @@
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
 		<div class="title">
-			Action dart analyze
+			<LogoTitle
+				src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png"
+				title="Action dart analyze"
+			/>
+
 			<Skills skillIds={skills} />
 		</div>
 		<article class="prose">

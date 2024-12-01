@@ -1,4 +1,5 @@
 <script lang="ts">
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
 	import { SkillId } from '$lib/data/skills';
 	import Skills from '../../lib/components/Skills.svelte';
 
@@ -11,7 +12,10 @@
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
 		<div class="title">
-			Themed color palette
+			<LogoTitle src="https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png">
+				Themed color palette
+			</LogoTitle>
+
 			<Skills skillIds={skills} />
 		</div>
 		<article class="prose">
