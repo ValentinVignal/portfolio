@@ -1,13 +1,20 @@
+import { options } from '$lib/data/themes';
 import { expect, test } from '@playwright/test';
+import { setTheme } from '../../utils/utils';
 
-test('It should display the resume page', async ({ page }) => {
-	await page.goto('/portfolio/resume');
+for (const [themeId, theme] of options) {
+	test(`It should display the resume page - ${theme}`, async ({ page }) => {
+		await page.route('https://drive.google.com/**/*', (route) => route.abort());
+		await page.goto('/portfolio/resume');
 
-	// It should have the correct title.
-	await expect(page.title()).resolves.toEqual('Valentin Vignal - Resume');
+		await setTheme(page, themeId);
 
-	// It should contain the resume.
-	await expect(page.locator('embed.resume')).toBeVisible();
+		// It should have the correct title.
+		await expect(page.title()).resolves.toEqual('Valentin Vignal - Resume');
 
-	await expect(page).toHaveScreenshot({ fullPage: true }); // Takes a screenshot of the page.
-});
+		// It should contain the resume.
+		await expect(page.locator('embed.resume')).toBeVisible();
+
+		await expect(page).toHaveScreenshot({ fullPage: true }); // Takes a screenshot of the page.
+	});
+}

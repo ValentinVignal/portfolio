@@ -1,4 +1,6 @@
+import { options } from '$lib/data/themes';
 import { expect, test } from '@playwright/test';
+import { setTheme } from '../../utils/utils';
 
 test('It should display the education page', async ({ page }) => {
 	await page.goto('/portfolio/education');
@@ -16,9 +18,13 @@ test('It should display the education page', async ({ page }) => {
 	await expect(page).toHaveScreenshot({ fullPage: true }); // Takes a screenshot of the page.
 });
 
-test('It should display the education page with a tall screen', async ({ page }) => {
-	page.setViewportSize({ width: 1280, height: 850 });
-	await page.goto('/portfolio/education');
+for (const [themeId, theme] of options) {
+	test(`It should display the education page with a tall screen - ${theme}`, async ({ page }) => {
+		page.setViewportSize({ width: 1280, height: 850 });
+		await page.goto('/portfolio/education');
 
-	await expect(page).toHaveScreenshot({ fullPage: true }); // Takes a screenshot of the page.
-});
+		await setTheme(page, themeId);
+
+		await expect(page).toHaveScreenshot({ fullPage: true }); // Takes a screenshot of the page.
+	});
+}
