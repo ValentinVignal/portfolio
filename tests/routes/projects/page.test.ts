@@ -1,6 +1,6 @@
 import { options } from '$lib/data/themes';
 import { expect, test } from '@playwright/test';
-import { getFakeHtml, setTheme } from '../../utils/utils';
+import { setTheme } from '../../utils/utils';
 import { mount } from 'svelte';
 import { setTimeout } from 'timers/promises';
 
