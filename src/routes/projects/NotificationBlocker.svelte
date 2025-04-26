@@ -50,7 +50,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		@screen lg {
+		@media (min-width: 1280px) {
 			justify-content: space-between;
 			flex-direction: row;
 			align-items: center;

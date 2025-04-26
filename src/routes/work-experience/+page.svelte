@@ -2,25 +2,24 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import Skills from '$lib/components/Skills.svelte';
-	import { changeUrlPath, redirect } from '$lib/services/redirect';
+	import { changeUrlPath } from '$lib/services/redirect';
 	import { ChevronRight } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
-	import { beforeUpdate } from 'svelte';
 	import type { PageData } from './$types';
 	import { goto } from '$app/navigation';
 	import ConditionalAnchor from '$lib/components/ConditionalAnchor.svelte';
 
-	export let data: PageData;
+	const { data }: { data: PageData } = $props();
 
-	let links = data.workExperiences.map((workExperience) =>
-		workExperience.url ? `${base}/work-experience/${workExperience.url}` : null
+	let links = $state(
+		data.workExperiences.map((workExperience) =>
+			workExperience.url ? `${base}/work-experience/${workExperience.url}` : null
+		)
 	);
 
-	beforeUpdate(() => {
+	$effect(() => {
 		links = data.workExperiences.map((workExperience) =>
-			workExperience
-				? changeUrlPath($page.url, `/work-experience/${workExperience.url}`).toString()
-				: null
+			workExperience ? changeUrlPath(`/work-experience/${workExperience.url}`) : null
 		);
 	});
 </script>
@@ -28,7 +27,7 @@
 <ul class="steps steps-vertical">
 	{#each data.workExperiences as workExperience, index (workExperience.id)}
 		<li data-content="" class="step step-primary">
-			<div class="card shadow-xl bg-base-100 card-bordered">
+			<div class="card shadow-xl bg-base-300 card-bordered my-8 px-8">
 				<div class="card-body">
 					<div class="card-title">
 						<div class="card-name">
@@ -101,14 +100,7 @@
 </svelte:head>
 
 <style>
-	ul {
-		width: 100%;
-	}
-	li {
-		width: 100%;
-	}
 	.card {
-		margin: 8px;
 		width: 100%;
 		text-align: left;
 	}
@@ -117,7 +109,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		@screen lg {
+		@media (min-width: 1280px) {
 			justify-content: space-between;
 			flex-direction: row;
 			align-items: center;

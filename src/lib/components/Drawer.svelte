@@ -13,6 +13,7 @@
 		User
 	} from '@steeze-ui/heroicons';
 	import DrawerItem from './DrawerItem.svelte';
+	import { hideProfilePicture } from '$lib/services/env';
 </script>
 
 <div class="drawer md:drawer-open">
@@ -24,7 +25,12 @@
 		<label for="drawer" class="drawer-overlay"></label>
 		<aside>
 			<div class="drawer-side-content bg-base-200">
-				<a href="{base}/" class="profile-picture" aria-label="Profile">
+				<a
+					href="{base}/"
+					class="profile-picture"
+					aria-label="Profile"
+					class:hidden={hideProfilePicture}
+				>
 					<div>
 						<enhanced:img
 							src={ProfilePicture}
@@ -101,5 +107,9 @@
 	.drawer-content {
 		height: 100vh;
 		overflow: auto;
+	}
+
+	.hidden {
+		visibility: hidden;
 	}
 </style>

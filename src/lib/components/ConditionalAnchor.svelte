@@ -2,7 +2,7 @@
 	export let link: string | null = null;
 </script>
 
-{#if link!!}
+{#if !!link}
 	<a href={link}>
 		<slot />
 	</a>

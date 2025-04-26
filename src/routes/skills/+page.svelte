@@ -1,19 +1,17 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { building } from '$app/environment';
+	import { page } from '$app/state';
 	import { getSelectedSkills, type SkillId } from '$lib/data/skills';
-	import { beforeUpdate } from 'svelte';
 
 	import type { PageData } from './$types';
 	import SkillCard from './SkillCard.svelte';
 
-	let selectedSkills: SkillId[] = [];
+	// This is because page.url.searchParams cannot be used in the server-side
+	// rendering
+	let selectedSkills = $derived.by(() => (building ? [] : getSelectedSkills(page.url)));
 
-	beforeUpdate(() => {
-		selectedSkills = getSelectedSkills($page.url);
-	});
-
-	export let data: PageData;
-	$: skills = data.skills;
+	const { data }: { data: PageData } = $props();
+	const skills = data.skills;
 </script>
 
 <div class="skills-container">

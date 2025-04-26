@@ -1,31 +1,32 @@
 <script lang="ts">
-	type StackOverFlowData = {
-		items: [
-			{
-				reputation: number;
-				link: string;
-				display_name: string;
-			}
-		];
+	import { onMount } from 'svelte';
+
+	type StackOverflowItem = {
+		reputation: number;
+		link: string;
+		display_name: string;
 	};
 
-	const getData = async () => {
+	type StackOverFlowData = {
+		items: [StackOverflowItem];
+	};
+
+	let data: StackOverflowItem | null = null;
+	onMount(async () => {
 		const res = await fetch(
 			'https://api.stackexchange.com/2.3/users/12066144?pagesize=1&order=desc&sort=reputation&site=stackoverflow',
 			{ method: 'GET' }
 		);
-		const data: StackOverFlowData = await res.json();
-		return data.items[0];
-	};
-
-	$: data = getData();
+		const stackOverflowData: StackOverFlowData = await res.json();
+		data = stackOverflowData.items[0];
+	});
 </script>
 
-{#await data then data}
+{#if data}
 	<a href={data.link}>
 		<img
 			src="https://img.shields.io/badge/Stack%20Overflow-{data.reputation}-F47F24"
 			alt={data.display_name}
 		/>
 	</a>
-{/await}
+{/if}

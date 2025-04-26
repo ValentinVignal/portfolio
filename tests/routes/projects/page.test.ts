@@ -1,8 +1,6 @@
 import { options } from '$lib/data/themes';
 import { expect, test } from '@playwright/test';
 import { setTheme } from '../../utils/utils';
-import { mount } from 'svelte';
-import { setTimeout } from 'timers/promises';
 
 test('It should display the projects page', async ({ page }) => {
 	await page.goto('/portfolio/projects');

@@ -10,7 +10,7 @@
 <ul class="steps steps-vertical">
 	{#each data.education as education (education.url)}
 		<li data-content="" class="step step-primary">
-			<div class="card shadow-xl bg-base-100 card-bordered">
+			<div class="card shadow-xl bg-base-300 card-bordered px-8 my-8">
 				<div class="card-body">
 					<div class="card-title">
 						<a href={education.url}>
@@ -26,7 +26,7 @@
 								<Skills skillIds={education.skills} />
 							</div>
 							<a href={education.url}>
-								<div class="arrow-icon">
+								<div class="arrow-icon pl-8 pt-2">
 									<Icon src={ArrowTopRightOnSquare} size="25" />
 								</div>
 							</a>
@@ -59,14 +59,7 @@
 </svelte:head>
 
 <style>
-	ul {
-		width: 100%;
-	}
-	li {
-		width: 100%;
-	}
 	.card {
-		margin: 8px;
 		width: 100%;
 		text-align: left;
 	}
