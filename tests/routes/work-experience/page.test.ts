@@ -6,7 +6,7 @@ test('It should display the work experiences page', async ({ page }) => {
 	await page.goto('/portfolio/work-experience');
 
 	// It should have the correct title.
-	await expect(page.title()).resolves.toEqual('Valentin Vignal - Work Experience');
+	await expect(page).toHaveTitle('Valentin Vignal - Work Experience');
 
 	// It should contain my work experience.
 	await expect(page.getByText('Novade Solutions')).toHaveCount(3);

@@ -10,7 +10,7 @@ for (const [themeId, theme] of options) {
 		await setTheme(page, themeId);
 
 		// It should have the correct title.
-		await expect(page.title()).resolves.toEqual('Valentin Vignal - Resume');
+		await expect(page).toHaveTitle('Valentin Vignal - Resume');
 
 		// It should contain the resume.
 		await expect(page.locator('embed.resume')).toBeVisible();

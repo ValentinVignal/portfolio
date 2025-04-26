@@ -6,7 +6,7 @@ test('It should display the contributions page', async ({ page }) => {
 	await page.goto('/portfolio/contributions');
 
 	// It should have the correct title.
-	await expect(page.title()).resolves.toEqual('Valentin Vignal - Contributions');
+	await expect(page).toHaveTitle('Valentin Vignal - Contributions');
 
 	// It should contain the contributions.
 	await expect(page.getByText('Flutter', { exact: true })).toBeVisible();
@@ -25,7 +25,7 @@ test('It should display the contributions page with a tall screen', async ({ pag
 	await page.goto('/portfolio/contributions');
 
 	// It should have the correct title.
-	await expect(page.title()).resolves.toEqual('Valentin Vignal - Contributions');
+	await expect(page).toHaveTitle('Valentin Vignal - Contributions');
 
 	// It should contain the contributions.
 	await expect(page.getByText('Flutter', { exact: true })).toBeVisible();

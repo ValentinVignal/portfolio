@@ -6,7 +6,7 @@ test('It should display the education page', async ({ page }) => {
 	await page.goto('/portfolio/education');
 
 	// It should have the correct title.
-	await expect(page.title()).resolves.toEqual('Valentin Vignal - Education');
+	await expect(page).toHaveTitle('Valentin Vignal - Education');
 
 	// It should contain the education details.
 	await expect(

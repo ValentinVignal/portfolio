@@ -9,7 +9,7 @@ for (const [themeId, theme] of options) {
 		await setTheme(page, themeId);
 
 		// It should have the correct title.
-		await expect(page.title()).resolves.toEqual('Valentin Vignal - Accounts');
+		await expect(page).toHaveTitle('Valentin Vignal - Accounts');
 
 		// It should contain the accounts.
 		await expect(page.getByText('GitHub')).toBeVisible();

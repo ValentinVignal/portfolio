@@ -6,7 +6,7 @@ test('It should display the projects page', async ({ page }) => {
 	await page.goto('/portfolio/projects');
 
 	// It should have the correct title.
-	await expect(page.title()).resolves.toEqual('Valentin Vignal - Projects');
+	await expect(page).toHaveTitle('Valentin Vignal - Projects');
 
 	// It should contain the project.
 	await expect(page.getByText('ntm', { exact: true })).toBeVisible();

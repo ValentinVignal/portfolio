@@ -9,7 +9,7 @@ for (const [themeId, theme] of options) {
 		await setTheme(page, themeId);
 
 		// It should have the correct title.
-		await expect(page.title()).resolves.toEqual('Valentin Vignal - Skills');
+		await expect(page).toHaveTitle('Valentin Vignal - Skills');
 
 		// It should contain the skills.
 		await expect(page.getByText('Flutter')).toBeVisible();
