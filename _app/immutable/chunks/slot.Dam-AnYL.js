@@ -1,1 +1,0 @@
-import{h as r,i as l}from"./runtime.Dd1qabc2.js";function d(e,t,n,s,o){var f;r&&l();var i=(f=t.$$slots)==null?void 0:f[n],a=!1;i===!0&&(i=t.children,a=!0),i===void 0||i(e,a?()=>s:s)}function c(e){const t={};e.children&&(t.default=!0);for(const n in e.$$slots)t[n]=!0;return t}export{d as a,c as s};

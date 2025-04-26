@@ -1,1 +1,1 @@
-export const env={}
+export const env={"PUBLIC_NO_PROFILE_PICTURE":"false"}
