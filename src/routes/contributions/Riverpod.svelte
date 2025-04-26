@@ -7,7 +7,6 @@
 	const skills = [SkillId.Riverpod, SkillId.Flutter, SkillId.Dart];
 </script>
 
-<!-- TODO: Mention youtube video Remi mentioning me -->
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
@@ -64,7 +63,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		@screen lg {
+		@media (min-width: 1280px) {
 			justify-content: space-between;
 			flex-direction: row;
 			align-items: center;

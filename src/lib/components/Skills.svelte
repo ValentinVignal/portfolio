@@ -1,18 +1,20 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { SkillId, getSelectedSkills, skillFromId } from '$lib/data/skills';
 	import { GTagEvent, gtagEvent } from '$lib/services/gtag';
 	import { changeUrlSkill } from '$lib/services/redirect';
-	import { beforeUpdate } from 'svelte';
 
-	export let skillIds: SkillId[];
+	const { skillIds } = $props<{ skillIds: SkillId[] }>();
 	const skills = skillFromId(skillIds);
-	let selectedSkills: SkillId[] = [];
 
-	let links = Array<string>(skills.length).map(() => $page.url.toString());
-	beforeUpdate(() => {
-		selectedSkills = getSelectedSkills($page.url);
-		links = skills.map((skill) => changeUrlSkill($page.url, skill.id).toString());
+	let selectedSkills: string[] = $state([]);
+	$effect(() => {
+		selectedSkills = getSelectedSkills(page.url);
+	});
+
+	let links: string[] = $state([]);
+	$effect(() => {
+		links = skills.map((skill) => changeUrlSkill(page.url, skill.id).toString());
 	});
 
 	const handleClick = (id: SkillId): void => {
@@ -33,7 +35,7 @@
 	{#each skills as skill, index (skill.id)}
 		{@const selected = selectedSkills.includes(skill.id)}
 
-		<a data-sveltekit-noscroll href={links[index]} on:click={() => handleClick(skill.id)}>
+		<a data-sveltekit-noscroll href={links[index]} onclick={() => handleClick(skill.id)}>
 			<span
 				class="badge badge-neutral tooltip tooltip-bottom hover:ring-2 hover:ring-accent/50"
 				class:ring-accent={selected}
@@ -61,7 +63,7 @@
 		gap: 0.5rem;
 		align-items: center;
 		padding-top: 4px;
-		@screen lg {
+		@media (min-width: 1280px) {
 			padding-top: 0px;
 		}
 	}

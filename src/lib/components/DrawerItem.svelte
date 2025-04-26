@@ -1,13 +1,10 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { changeUrlPath } from '$lib/services/redirect';
 	import { Icon, type IconSource } from '@steeze-ui/svelte-icon';
-	import { beforeUpdate } from 'svelte';
 
-	export let href: string;
-	export let text: string;
-	export let icon: IconSource;
+	const { href, text, icon }: { href: string; text: string; icon: IconSource } = $props();
 
 	const isActive = (path: string): boolean => {
 		if (base) {
@@ -19,18 +16,18 @@
 		return path.startsWith(href);
 	};
 
-	$: active = isActive($page.url.pathname);
-	let url = base + href;
-	beforeUpdate(() => {
-		url = changeUrlPath($page.url, href).toString();
-	});
+	const active = $derived(isActive(page.url.pathname));
+	const url = $derived(changeUrlPath(href));
 </script>
 
 <li>
 	<a
-		href={url}
 		class:active
-		on:click={() => {
+		class:bg-neutral={active}
+		class:text-neutral-content={active}
+		class="rounded-md"
+		href={url}
+		onclick={() => {
 			document.getElementById('drawer')?.click();
 		}}
 	>

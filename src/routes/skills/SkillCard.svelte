@@ -1,22 +1,21 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import type { Skill, SkillId } from '$lib/data/skills';
+	import { building } from '$app/environment';
+	import { page } from '$app/state';
+	import type { Skill } from '$lib/data/skills';
 	import { GTagEvent, gtagEvent } from '$lib/services/gtag';
 	import { changeUrlSkill } from '$lib/services/redirect';
 	import { ArrowTopRightOnSquare } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
-	import { beforeUpdate } from 'svelte';
+	import { onMount } from 'svelte';
 	import { slide } from 'svelte/transition';
 
-	export let skill: Skill;
-	export let selected: boolean;
+	const { skill, selected } = $props<{ skill: Skill; selected: boolean }>();
 
-	let visible = false;
+	let visible = $state(false);
 
-	let link = $page.url.toString();
-	beforeUpdate(() => {
-		link = changeUrlSkill($page.url, skill.id).toString();
-	});
+	// This is because page.url.searchParams cannot be used in the server-side
+	// rendering
+	let link = $derived.by(() => (building ? '' : changeUrlSkill(page.url, skill.id).toString()));
 
 	const onSkillSelect = (): void => {
 		gtagEvent({
@@ -33,30 +32,33 @@
 <div
 	role="button"
 	tabindex="0"
-	class="card card-bordered shadow-xl bg-base-100 hover:ring-2 hover:ring-accent/50"
-	class:ring-2={selected}
-	class:ring-accent={selected}
-	on:mouseenter={() => (visible = true)}
-	on:mouseleave={() => (visible = false)}
+	onmouseenter={() => (visible = true)}
+	onmouseleave={() => (visible = false)}
 >
-	<a data-sveltekit-noscroll href={link} on:click={onSkillSelect}>
-		<div class="card-body">
-			<div class="card-title">
-				<img
-					src={`https://www.google.com/s2/favicons?domain=${skill.url}`}
-					alt={`${skill.name} logo`}
-				/>
-				{skill.name}
+	<div
+		class="card card-bordered shadow-xl bg-base-300 hover:ring-2 hover:ring-accent/50"
+		class:ring-2={selected}
+		class:ring-accent={selected}
+	>
+		<a data-sveltekit-noscroll href={link} onclick={onSkillSelect}>
+			<div class="card-body">
+				<div class="card-title">
+					<img
+						src={`https://www.google.com/s2/favicons?domain=${skill.url}`}
+						alt={`${skill.name} logo`}
+					/>
+					{skill.name}
+				</div>
 			</div>
-		</div>
-	</a>
-	{#if visible}
-		<button class="link-icon btn btn-square m-4" transition:slide={{ axis: 'x' }}>
-			<a href={skill.url} target="_blank" rel="noopener noreferrer">
-				<Icon src={ArrowTopRightOnSquare} size="25" />
-			</a>
-		</button>
-	{/if}
+		</a>
+		{#if visible}
+			<button class="link-icon btn btn-square m-4" transition:slide={{ axis: 'x' }}>
+				<a href={skill.url} target="_blank" rel="noopener noreferrer">
+					<Icon src={ArrowTopRightOnSquare} size="25" />
+				</a>
+			</button>
+		{/if}
+	</div>
 </div>
 
 <style>
