@@ -21,7 +21,7 @@ for (const [themeId, theme] of options) {
 	test(`It should display the work experiences page with a tall screen - ${theme}`, async ({
 		page
 	}) => {
-		page.setViewportSize({ width: 1280, height: 850 });
+		page.setViewportSize({ width: 1280, height: 1200 });
 		await page.goto('/portfolio/work-experience');
 
 		await setTheme(page, themeId);

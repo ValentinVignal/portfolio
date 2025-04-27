@@ -18,6 +18,26 @@ type WorkExperience = {
 	skills: SkillId[];
 };
 
+const prudential: Company = {
+	name: 'Prudential plc',
+	url: 'https://www.prudentialplc.com/',
+	logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Prudential-plc-1986.svg/1920px-Prudential-plc-1986.svg.png'
+};
+
+const prudentialSkills = [
+	SkillId.Flutter,
+	SkillId.Dart,
+	SkillId.TypeScript,
+	SkillId.Riverpod,
+	SkillId.GraphQL,
+	SkillId.GoRouter,
+	SkillId.NestJS,
+	SkillId.Freezed,
+	SkillId.Firebase,
+	SkillId.GithubActions,
+	SkillId.VSCode
+];
+
 const novade: Company = {
 	name: 'Novade Solutions',
 	url: 'https://www.novade.net/',
@@ -48,6 +68,16 @@ const novadeDescription =
 	'on the main web and mobile application with Flutter for the front end, NestJS for the backend, GraphQL for the API and PostgreSQL for the database.';
 
 const workExperiences: WorkExperience[] = [
+	{
+		id: 'prudential-lead-software-engineer',
+		company: prudential,
+		title: 'Lead Software Engineer',
+		url: 'prudential-plc',
+		description: `Lead software engineer`,
+		start: new Date(2024, 10),
+		country: 'Singapore',
+		skills: prudentialSkills
+	},
 	{
 		id: 'novade-senior-full-stack-developer',
 		company: novade,

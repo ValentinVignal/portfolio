@@ -1,12 +1,10 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { page } from '$app/stores';
 	import Skills from '$lib/components/Skills.svelte';
 	import { changeUrlPath } from '$lib/services/redirect';
 	import { ChevronRight } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import type { PageData } from './$types';
-	import { goto } from '$app/navigation';
 	import ConditionalAnchor from '$lib/components/ConditionalAnchor.svelte';
 
 	const { data }: { data: PageData } = $props();
