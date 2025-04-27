@@ -27,7 +27,7 @@
 			<div class="drawer-side-content bg-base-200">
 				<a
 					href="{base}/"
-					class="profile-picture"
+					class="profile-picture aria-hidden={hideProfilePicture ? true : false}"
 					aria-label="Profile"
 					class:hidden={hideProfilePicture}
 				>
