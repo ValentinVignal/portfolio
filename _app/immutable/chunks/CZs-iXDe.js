@@ -1,1 +1,0 @@
-import{l as r,m as l}from"./DsqxRBs0.js";function d(e,t,i,s,o){var f;r&&l();var n=(f=t.$$slots)==null?void 0:f[i],a=!1;n===!0&&(n=t.children,a=!0),n===void 0||n(e,a?()=>s:s)}function c(e){const t={};e.children&&(t.default=!0);for(const i in e.$$slots)t[i]=!0;return t}export{d as a,c as s};
