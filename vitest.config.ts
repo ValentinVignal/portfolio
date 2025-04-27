@@ -1,12 +1,14 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import path from 'path';
 import { defineConfig } from 'vitest/config';
+import { svelteTesting } from '@testing-library/svelte/vite';
 
 export default defineConfig(({ mode }) => ({
-	plugins: [svelte({ hot: !process.env.VITEST })],
+	plugins: [svelte({ hot: !process.env.VITEST }), svelteTesting()],
 	test: {
 		environment: 'happy-dom',
-		exclude: ['**/node_modules/**', 'tests/**']
+		exclude: ['**/node_modules/**', 'tests/**'],
+		setupFiles: ['./vitest-setup.js']
 	},
 	resolve: {
 		conditions: mode === 'test' ? ['browser'] : [],
