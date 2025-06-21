@@ -15,8 +15,8 @@ for (const [themeId, theme] of options) {
 		await expect(page.getByText("Hello! I'm Valentin Vignal.")).toBeVisible();
 
 		// It should contain a link to my current job.
-		const novadeLink = page.locator('a[href="https://www.novade.net/"]');
-		expect(novadeLink).toBeVisible();
+		const prudentialLink = page.locator('a[href="https://www.prudentialplc.com"]');
+		expect(prudentialLink).toBeVisible();
 
 		await expect(page).toHaveScreenshot(); // Takes a screenshot of the page.
 	});
