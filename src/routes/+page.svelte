@@ -8,8 +8,8 @@
 	<p>Hello! I'm Valentin Vignal.</p>
 
 	<p>
-		I'm a full-stack developer and I'm currently working at <a href="https://www.novade.net/"
-			>Novade</a
+		I'm a full-stack developer and I'm currently working at <a href="https://www.prudentialplc.com"
+			>Prudential</a
 		>
 		in Singapore.
 	</p>
