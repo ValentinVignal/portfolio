@@ -2,7 +2,7 @@ import { options } from '$lib/data/themes';
 import { expect, test } from '@playwright/test';
 import { setTheme } from '../../../utils/utils';
 
-test('It should display the novade solutions page', async ({ page }) => {
+test('It should display the prudential page', async ({ page }) => {
 	await page.goto('/portfolio/work-experience/prudential-plc');
 
 	// It should have the correct title.

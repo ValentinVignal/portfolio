@@ -23,7 +23,7 @@
 				<a href="https://github.com/flutter/flutter/pull/152361#pullrequestreview-2201981291">
 					contributor access
 				</a>
-				to the repositories with over 100 contributions. My contributions to the flutter framework are
+				to the repositories with over 150 contributions. My contributions to the flutter framework are
 				mostly around the theme, testing and fixing memory leaks.
 			</p>
 		</article>
