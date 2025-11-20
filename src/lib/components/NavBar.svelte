@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
-	import { ArrowDownTray, Bars3 } from '@steeze-ui/heroicons';
+	import { Bars3 } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import DownloadResumeButton from './DownloadResumeButton.svelte';
 
@@ -24,6 +24,8 @@
 				return 'Skills';
 			case `/accounts`:
 				return 'Accounts';
+			case `/hobbies`:
+				return 'Hobbies';
 			case `/resume`:
 				return 'My Resume';
 			default:

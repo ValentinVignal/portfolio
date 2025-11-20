@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import ProfilePicture from '$lib/assets/images/profile-picture.jpeg?enhanced';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
+	import { hideProfilePicture } from '$lib/services/env';
 	import {
 		BuildingLibrary,
 		BuildingOffice,
@@ -10,10 +11,10 @@
 		DocumentText,
 		Hashtag,
 		Home,
+		MusicalNote,
 		User
 	} from '@steeze-ui/heroicons';
 	import DrawerItem from './DrawerItem.svelte';
-	import { hideProfilePicture } from '$lib/services/env';
 </script>
 
 <div class="drawer md:drawer-open">
@@ -48,6 +49,7 @@
 					<DrawerItem href="/contributions" text="Contributions" icon={CodeBracket} />
 					<DrawerItem href="/skills" text="Skills" icon={Hashtag} />
 					<DrawerItem href="/accounts" text="Accounts" icon={User} />
+					<DrawerItem href="/hobbies" text="Hobbies" icon={MusicalNote} />
 					<DrawerItem href="/resume" text="My Resume" icon={DocumentText} />
 				</ul>
 				<div class="bg-base-200">
