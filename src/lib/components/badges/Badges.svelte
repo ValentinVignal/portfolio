@@ -8,7 +8,11 @@
 	</div>
 
 	<a href="https://github.com/ValentinVignal">
-		<img alt="GitHub followers" src="https://img.shields.io/github/followers/ValentinVignal" />
+		<img
+			alt="GitHub followers"
+			src="https://img.shields.io/github/followers/ValentinVignal?style=flat&logo=github&label=Github%20followers&color=000000
+"
+		/>
 	</a>
 
 	<a href="https://wakatime.com/@a700230c-ba51-4378-8fbc-fbcb542401ed">
