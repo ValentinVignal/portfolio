@@ -13,11 +13,9 @@
 				{#each data.music as music (music.name)}
 					<tr>
 						<td class="w-20">
-							<div class="flex items-center gap-3">
-								<div class="avatar">
-									<div class="mask mask-squircle h-16 w-16">
-										<img src={music.logo} alt={music.name} />
-									</div>
+							<div class="avatar">
+								<div class="mask mask-squircle h-16 w-16">
+									<img src={music.logo} alt={music.name} />
 								</div>
 							</div>
 						</td>
@@ -27,7 +25,7 @@
 						<td>
 							<a href={music.youtube}>
 								<img
-									class="h-16"
+									class="h-16 w-full object-contain"
 									src="https://logos-world.net/wp-content/uploads/2020/06/YouTube-Logo.png
 "
 									alt="Youtube {music.name}"
@@ -37,7 +35,7 @@
 						<td>
 							<a href={music.spotify}>
 								<img
-									class="h-16"
+									class="h-16 w-full object-contain"
 									src="https://logos-world.net/wp-content/uploads/2020/10/Spotify-Logo.png"
 									alt="Spotify {music.name}"
 								/>
