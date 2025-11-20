@@ -1,0 +1,1 @@
+import{l as f,m as r}from"./sj7HJTey.js";function u(e,t,i,s,l){f&&r();var n=t.$$slots?.[i],a=!1;n===!0&&(n=t.children,a=!0),n===void 0||n(e,a?()=>s:s)}function d(e){const t={};e.children&&(t.default=!0);for(const i in e.$$slots)t[i]=!0;return t}export{u as a,d as s};
