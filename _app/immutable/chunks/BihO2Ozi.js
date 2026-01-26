@@ -1,0 +1,1 @@
+import{o,q as u,$ as _,l as t,C as g,Z as a,z as i,v as d,A as p,w as v}from"./DDPnINaz.js";function E(n,r){let s=null,f=t;var l;if(t){s=p;for(var e=v(document.head);e!==null&&(e.nodeType!==g||e.data!==n);)e=a(e);if(e===null)i(!1);else{var y=a(e);e.remove(),d(y)}}t||(l=document.head.appendChild(o()));try{u(()=>r(l),_)}finally{f&&(i(!0),d(s))}}export{E as h};
