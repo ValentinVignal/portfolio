@@ -2,7 +2,6 @@
 	import ActionDartAnalyze from './ActionDartAnalyze.svelte';
 	import AnimatedCollection from './AnimatedCollection.svelte';
 	import ChromeMarkdownEmojis from './ChromeMarkdownEmojis.svelte';
-	import Hider from './Hider.svelte';
 	import MidiGenerator from './MidiGenerator.svelte';
 	import NotificationBlocker from './NotificationBlocker.svelte';
 	import Ntm from './Ntm.svelte';
@@ -16,12 +15,11 @@
 <div class="container">
 	<Ntm />
 	<Padelistas />
-	<Hider />
 	<Periodik />
 	<Portfolio />
 	<ActionDartAnalyze />
-	<Pyronear />
 	<AnimatedCollection />
+	<Pyronear />
 	<NotificationBlocker />
 	<ThemedColorPalette />
 	<ChromeMarkdownEmojis />
