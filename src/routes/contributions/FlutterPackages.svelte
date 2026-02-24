@@ -18,7 +18,12 @@
 		</div>
 		<article class="prose">
 			<p>
-				I made multiple contributions to the flutter packages, mostly around <code>go_router</code>
+				I made over <a
+					href="https://github.com/flutter/packages/pulls?q=is%3Apr+author%3AValentinVignal+state%3Amerged"
+				>
+					50 contributions</a
+				>
+				to the flutter packages, mostly around <code>go_router</code>
 				and <code>go_router_builder</code>
 			</p>
 		</article>

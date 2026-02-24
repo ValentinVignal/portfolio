@@ -21,7 +21,10 @@
 		</div>
 		<article class="prose">
 			<p>
-				I made multiple contributions to <code>nestjs-query</code> mostly around the graphql API.
+				I made <a href="https://github.com/TriPSs/nestjs-query/pulls?q=author%3AValentinVignal+"
+					>multiple contributions</a
+				>
+				to <code>nestjs-query</code> mostly around the graphql API.
 			</p>
 		</article>
 	</div>

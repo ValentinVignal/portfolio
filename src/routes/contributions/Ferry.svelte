@@ -23,8 +23,11 @@
 		</div>
 		<article class="prose">
 			<p>
-				I made multiple contributions to <code>ferry</code>, one of them to allow different request
-				to reuse the same shared and cached stream.
+				I made <a href="https://github.com/gql-dart/ferry/issues?q=author%3AValentinVignal+"
+					>multiple contributions</a
+				>
+				to <code>ferry</code>, one of them to allow different request to reuse the same shared and
+				cached stream.
 			</p>
 		</article>
 	</div>

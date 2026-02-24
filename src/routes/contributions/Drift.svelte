@@ -21,8 +21,10 @@
 		</div>
 		<article class="prose">
 			<p>
-				I made multiple contributions to <code>drift</code>, mostly on <code>drift_dev</code> which is
-				the code generator.
+				I made <a href="https://github.com/simolus3/drift/pulls?q=author%3AValentinVignal+"
+					>multiple contributions</a
+				>
+				to <code>drift</code>, mostly on <code>drift_dev</code> which is the code generator.
 			</p>
 		</article>
 	</div>

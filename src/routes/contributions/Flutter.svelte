@@ -23,15 +23,30 @@
 				<a href="https://github.com/flutter/flutter/pull/152361#pullrequestreview-2201981291">
 					contributor access
 				</a>
-				to the repositories with over 150 contributions. My contributions to the flutter framework are
-				mostly around the theme, testing and fixing memory leaks.
+				to the repositories with over
+				<a
+					href="https://github.com/flutter/flutter/pulls?q=is%3Apr+author%3AValentinVignal+state%3Amerged"
+					>150 contributions</a
+				>. My contributions to the flutter framework are mostly around the theme, material widgets,
+				testing and fixing memory leaks.
 			</p>
 		</article>
 	</div>
 	<div class="collapse-content">
 		<article class="prose">
 			<ul>
+				<li>
+					Top 1 2024 contributor (<a href="https://flutterwrapped.codemagic.app/#/home">here</a> or
+					<a href="https://x.com/TahaTesser/status/1868747289872977987?s=20">here</a>)
+				</li>
+				<li>
+					<a
+						href="https://docs.google.com/document/d/1cE-oE1ULMeoguPDBKAqWY5AwQOuyZae-NF9v-2YhD9Y/edit?usp=sharing"
+						>Top 5 2025 contributor</a
+					>
+				</li>
 				<li>I'm a talker at the Flutter Singapore meetup.</li>
+
 				<li>
 					I've been mentioned in Flutter's notable commits. For example:
 					<ul>

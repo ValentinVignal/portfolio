@@ -18,8 +18,10 @@
 		quality over quantity. Most experienced Flutter, Svelte and NestJS.
 	</p>
 	<p>
-		I'm a member of the Flutter Github organization with contributor access and over 150
-		contributions.
+		I'm a member of the Flutter Github organization with contributor access and over <a
+			href="https://github.com/pulls?q=is%3Apr+author%3AValentinVignal+is%3Amerged+user%3Aflutter"
+			>200 contributions</a
+		>.
 	</p>
 
 	<p>
