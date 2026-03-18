@@ -73,8 +73,9 @@ const workExperiences: WorkExperience[] = [
 		company: prudential,
 		title: 'Lead Software Engineer',
 		url: 'prudential-plc',
-		description: `Lead software engineer`,
-		start: new Date(2024, 10),
+		description:
+			'Lead a team of 5 engineers building the Flutter-based web and mobile application. Own internal Dart packages, ensuring code quality and best practices across the company.',
+		start: new Date(2024, 9),
 		country: 'Singapore',
 		skills: prudentialSkills
 	},
