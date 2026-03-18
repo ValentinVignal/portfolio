@@ -17,7 +17,7 @@ const education: Education[] = [
 		description: 'Master in Computer Science - Specialization in Artificial Intelligence',
 		start: new Date(2019, 0),
 		end: new Date(2020, 5),
-		logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/NUS_coat_of_arms.svg/800px-NUS_coat_of_arms.svg.png',
+		logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/NUS_coat_of_arms.svg/330px-NUS_coat_of_arms.svg.png',
 		skills: [SkillId.Python, SkillId.Kotlin, SkillId.Android]
 	},
 	{
