@@ -1,4 +1,5 @@
 <script>
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
 </script>
 
 <article class="prose">
@@ -20,7 +21,42 @@
 		premium payments, and personalized recommendations, ensuring a seamless and user-friendly
 		experience.
 	</p>
+</article>
 
+<div class="collapse collapse-arrow bg-base-200">
+	<input type="checkbox" checked />
+	<div class="collapse-title text-xl font-medium">
+		<LogoTitle
+			src="https://pruservices.prudential.com.sg/app/icons/Icon-512.png"
+			title="PruServices"
+		/>
+	</div>
+	<div class="collapse-content">
+		<div class="mockup-browser border border-info-content m-4">
+			<div class="mockup-browser-toolbar">
+				<div class="input border border-info-content">
+					https://pruservices.prudential.com.sg/app
+				</div>
+			</div>
+			<div class="wrap-iframe">
+				<iframe src="https://pruservices.prudential.com.sg/app" title="PruServices"></iframe>
+			</div>
+		</div>
+		<article>
+			<div class="actions">
+				<a
+					href="https://pruservices.prudential.com.sg/app"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<button class="btn btn-neutral">Web</button>
+				</a>
+			</div>
+		</article>
+	</div>
+</div>
+
+<article class="prose">
 	<p class="text-sm mt-2">
 		<strong>Tools and technologies:</strong>
 		<span class="text-xs"
@@ -64,5 +100,22 @@
 <style>
 	article {
 		text-align: justify;
+	}
+
+	.wrap-iframe {
+		height: calc(600px * 0.75);
+		width: calc(100% / 0.75);
+	}
+
+	.wrap-iframe > iframe {
+		zoom: 0.75;
+		height: calc(600px / 0.75);
+		width: 100%;
+		transform: scale(0.75);
+		transform-origin: 0 0;
+	}
+
+	.collapse {
+		margin: 16px 0px;
 	}
 </style>
