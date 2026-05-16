@@ -20,7 +20,7 @@
 			href="https://play.google.com/store/apps/details?id=net.novade.lite">Android</a
 		>
 		and <a href="https://apps.apple.com/sg/app/novade-lite-field-management/id1579805253">iOS</a>)
-		and <a href="https://lite.novade.net/">web</a> application that allows construction and real
+		and <a href="https://app.novade.net">web</a> application that allows construction and real
 		estate companies to manage their work. The front end (web and mobile) are developed using
 		<a href="https://flutter.dev/">Flutter</a>. The backend runs using
 		<a href="https://www.typescriptlang.org/">TypeScript</a>
@@ -35,20 +35,20 @@
 <div class="collapse collapse-arrow bg-base-200">
 	<input type="checkbox" checked />
 	<div class="collapse-title text-xl font-medium">
-		<LogoTitle src="https://lite.novade.net/icons/favicon.png" title="Novade Lite" />
+		<LogoTitle src="https://app.novade.net/icons/android-icon-192x192.png" title="Novade Lite" />
 	</div>
 	<div class="collapse-content">
 		<div class="mockup-browser border border-info-content m-4">
 			<div class="mockup-browser-toolbar">
-				<div class="input border border-info-content">https://lite.novade.net/</div>
+				<div class="input border border-info-content">https://app.novade.net/</div>
 			</div>
 			<div class="wrap-iframe">
-				<iframe src="https://lite.novade.net" title="NovadeLite"></iframe>
+				<iframe src="https://app.novade.net" title="NovadeLite"></iframe>
 			</div>
 		</div>
 		<article>
 			<div class="actions">
-				<a href="https://lite.novade.net" target="_blank" rel="noopener noreferrer">
+				<a href="https://app.novade.net" target="_blank" rel="noopener noreferrer">
 					<button class="btn btn-neutral">Web</button>
 				</a>
 				<a
@@ -126,8 +126,7 @@
 		</li>
 		<li>
 			Optimized <a href="https://docs.flutter.dev/cookbook/design/themes">Flutter's theme</a> mechanism
-			for consistent theming, and led end-to-end migration from Material Design 2 to Material Design
-			3
+			for consistent theming, and led end-to-end migration from Material Design 2 to Material Design 3
 		</li>
 	</ul>
 </article>

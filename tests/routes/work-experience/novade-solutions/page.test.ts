@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 import { setTheme } from '../../../utils/utils';
 
 test('It should display the novade solutions page', async ({ page }) => {
-	await page.route('https://lite.novade.net', (route) => route.abort());
+	await page.route('https://app.novade.net', (route) => route.abort());
 	await page.goto('/portfolio/work-experience/novade-solutions');
 
 	// It should have the correct title.
@@ -20,7 +20,7 @@ for (const [themeId, theme] of options) {
 		page
 	}) => {
 		page.setViewportSize({ width: 1280, height: 2200 });
-		await page.route('https://lite.novade.net', (route) => route.abort());
+		await page.route('https://app.novade.net', (route) => route.abort());
 		await page.goto('/portfolio/work-experience/novade-solutions');
 
 		await setTheme(page, themeId);
