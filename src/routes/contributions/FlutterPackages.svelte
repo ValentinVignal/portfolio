@@ -11,7 +11,7 @@
 	<div class="collapse-title text-xl font-medium">
 		<div class="title">
 			<LogoTitle
-				src="https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png"
+				src="https://flutter.dev/assets/icon_flutter.817b4a56b047d0d36b338dd9ffd44dbd.svg"
 				title="Flutter packages"
 			/>
 			<Skills skillIds={skills} />

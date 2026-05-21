@@ -1,4 +1,5 @@
 <script>
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
 	import { SkillId } from '$lib/data/skills';
 	import Skills from '../../lib/components/Skills.svelte';
 
@@ -9,7 +10,9 @@
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
 		<div class="title">
-			<code>go_router</code>
+			<LogoTitle src="https://flutter.dev/assets/icon_flutter.817b4a56b047d0d36b338dd9ffd44dbd.svg">
+				<code>go_router</code>
+			</LogoTitle>
 			<Skills skillIds={skills} />
 		</div>
 		<article class="prose">
