@@ -5,7 +5,7 @@
 	import { changeUrlSkill } from '$lib/services/redirect';
 
 	const { skillIds } = $props<{ skillIds: SkillId[] }>();
-	const skills = skillFromId(skillIds);
+	const skills = $derived.by(() => skillFromId(skillIds));
 
 	let selectedSkills: string[] = $state([]);
 	$effect(() => {

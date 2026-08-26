@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { building } from '$app/environment';
 	import { page } from '$app/state';
-	import { getSelectedSkills, type SkillId } from '$lib/data/skills';
+	import { getSelectedSkills } from '$lib/data/skills';
 
 	import type { PageData } from './$types';
 	import SkillCard from './SkillCard.svelte';
@@ -11,7 +11,7 @@
 	let selectedSkills = $derived.by(() => (building ? [] : getSelectedSkills(page.url)));
 
 	const { data }: { data: PageData } = $props();
-	const skills = data.skills;
+	const skills = $derived(data.skills);
 </script>
 
 <div class="skills-container">

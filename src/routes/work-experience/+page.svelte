@@ -1,25 +1,17 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import ConditionalAnchor from '$lib/components/ConditionalAnchor.svelte';
 	import Skills from '$lib/components/Skills.svelte';
 	import { changeUrlPath } from '$lib/services/redirect';
 	import { ChevronRight } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import type { PageData } from './$types';
-	import ConditionalAnchor from '$lib/components/ConditionalAnchor.svelte';
 
 	const { data }: { data: PageData } = $props();
-
-	let links = $state(
+	let links = $derived(
 		data.workExperiences.map((workExperience) =>
-			workExperience.url ? `${base}/work-experience/${workExperience.url}` : null
+			workExperience.url ? changeUrlPath(`/work-experience/${workExperience.url}`) : null
 		)
 	);
-
-	$effect(() => {
-		links = data.workExperiences.map((workExperience) =>
-			workExperience ? changeUrlPath(`/work-experience/${workExperience.url}`) : null
-		);
-	});
 </script>
 
 <ul class="steps steps-vertical">
