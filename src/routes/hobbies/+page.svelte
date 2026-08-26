@@ -26,8 +26,7 @@
 							<a href={music.youtube}>
 								<img
 									class="h-16 w-full object-contain"
-									src="https://logos-world.net/wp-content/uploads/2020/06/YouTube-Logo.png
-"
+									src="https://favicon.run/favicon?domain=youtube.com&sz=256"
 									alt="Youtube {music.name}"
 								/></a
 							>
@@ -36,7 +35,7 @@
 							<a href={music.spotify}>
 								<img
 									class="h-16 w-full object-contain"
-									src="https://logos-world.net/wp-content/uploads/2020/10/Spotify-Logo.png"
+									src="https://favicon.run/favicon?domain=spotify.com&sz=256"
 									alt="Spotify {music.name}"
 								/>
 							</a>

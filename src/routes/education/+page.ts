@@ -37,7 +37,8 @@ const education: Education[] = [
 			'Intensive two-year preparation to the highly competitive entrance examinations for the French Engineering Schools',
 		start: new Date(2014, 8),
 		end: new Date(2016, 5),
-		skills: [SkillId.Python]
+		skills: [SkillId.Python],
+		logo: 'https://favicon.run/favicon?domain=lycee-massena.fr&sz=256'
 	}
 ];
 

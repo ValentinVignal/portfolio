@@ -1,4 +1,5 @@
 <script lang="ts">
+	import LogoTitle from '$lib/components/LogoTitle.svelte';
 	import { SkillId } from '$lib/data/skills';
 	import Skills from '../../lib/components/Skills.svelte';
 
@@ -11,7 +12,9 @@
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
 		<div class="title">
-			ntm
+			<LogoTitle src="https://favicon.run/favicon?domain=pub.dev&sz=256">
+				<code>ntm</code>
+			</LogoTitle>
 			<Skills skillIds={ntmSkills} />
 		</div>
 		<article class="prose">

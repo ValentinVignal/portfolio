@@ -16,7 +16,7 @@
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
 		<div class="title">
-			<LogoTitle src="https://ferrygraphql.com/img/favicon.ico" title="Ferry">
+			<LogoTitle src="https://favicon.run/favicon?domain=ferrygraphql.com&sz=256" title="Ferry">
 				<code>ferry</code>
 			</LogoTitle>
 			<Skills skillIds={skills} />

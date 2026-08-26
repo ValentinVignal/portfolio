@@ -41,7 +41,7 @@ const prudentialSkills = [
 const novade: Company = {
 	name: 'Novade Solutions',
 	url: 'https://www.novade.net/',
-	logo: 'https://www.novade.net/wp-content/uploads/2022/02/Novade-Solutions-Logo.png'
+	logo: 'https://favicon.run/favicon?domain=www.novade.net&sz=256'
 };
 
 const novadeSkills = [

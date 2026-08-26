@@ -12,7 +12,7 @@
 	<input type="checkbox" />
 	<div class="collapse-title text-xl font-medium">
 		<div class="title">
-			<LogoTitle src="https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png">
+			<LogoTitle src="https://favicon.run/favicon?domain=pub.dev&sz=256">
 				Themed color palette
 			</LogoTitle>
 

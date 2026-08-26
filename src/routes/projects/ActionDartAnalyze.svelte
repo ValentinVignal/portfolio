@@ -11,7 +11,7 @@
 	<div class="collapse-title text-xl font-medium">
 		<div class="title">
 			<LogoTitle
-				src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png"
+				src="https://favicon.run/favicon?domain=github.com&sz=256"
 				title="Action dart analyze"
 			/>
 
