@@ -16,6 +16,10 @@
 				return 'Work experience';
 			case `/work-experience/novade-solutions`:
 				return 'Novade Solutions';
+			case `/work-experience/prudential-plc`:
+				return 'Prudential plc';
+			case `/work-experience/arta-finance`:
+				return 'Arta Finance';
 			case `/projects`:
 				return 'Projects';
 			case `/contributions`:
